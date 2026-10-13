@@ -1,0 +1,276 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>SDCV</title>
+<meta name="description" content="Stop Doomscrolling, Create Value: a public log of what I build, what it costs, and what it earns.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3E%3Crect width='16' height='16' rx='4' fill='%232a78d6'/%3E%3Cpath d='M3 12 L7 8 L9 10 L13 4' stroke='white' stroke-width='2' fill='none' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E">
+<style>
+  :root {
+    color-scheme: light;
+    --surface-0: #f3f3f1;
+    --surface-1: #fcfcfb;
+    --border: #e4e3de;
+    --grid: #e6e5e0;
+    --text-primary: #0b0b0b;
+    --text-secondary: #52514e;
+    --text-muted: #6f6e68;
+    --series-1: #2a78d6;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      color-scheme: dark;
+      --surface-0: #121211;
+      --surface-1: #1a1a19;
+      --border: #2e2e2b;
+      --grid: #2c2c2a;
+      --text-primary: #ffffff;
+      --text-secondary: #c3c2b7;
+      --text-muted: #918f87;
+      --series-1: #3987e5;
+    }
+  }
+  :root[data-theme="dark"] {
+    color-scheme: dark;
+    --surface-0: #121211;
+    --surface-1: #1a1a19;
+    --border: #2e2e2b;
+    --grid: #2c2c2a;
+    --text-primary: #ffffff;
+    --text-secondary: #c3c2b7;
+    --text-muted: #918f87;
+    --series-1: #3987e5;
+  }
+
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    background: var(--surface-0);
+    color: var(--text-primary);
+    font: 16px/1.5 system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+    -webkit-font-smoothing: antialiased;
+  }
+  main { max-width: 760px; margin: 0 auto; padding: 32px 16px 48px; }
+  .card {
+    background: var(--surface-1);
+    border: 1px solid var(--border);
+    border-radius: 14px;
+    padding: 20px;
+  }
+  .label { margin: 0; font-size: 14px; color: var(--text-secondary); }
+  .sub { margin: 4px 0 0; font-size: 14px; color: var(--text-muted); }
+  h2 { margin: 0 0 12px; font-size: 16px; font-weight: 600; }
+
+  header { margin-bottom: 24px; }
+  .eyebrow { margin: 0; font-size: 14px; color: var(--text-secondary); letter-spacing: .02em; }
+  .eyebrow b { color: var(--text-primary); }
+  h1 { margin: 2px 0 0; font-size: 40px; line-height: 1.1; letter-spacing: .06em; font-weight: 700; }
+  #day { margin: 8px 0 0; color: var(--text-secondary); }
+  #day strong { color: var(--text-primary); }
+
+  .hero-value {
+    margin: 4px 0 0;
+    font-size: clamp(48px, 14vw, 72px);
+    line-height: 1.05;
+    font-weight: 600;
+    letter-spacing: -.02em;
+  }
+  .tiles { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; margin: 12px 0; }
+  .tile .value { margin: 4px 0 0; font-size: 28px; line-height: 1.2; font-weight: 600; }
+  @media (max-width: 420px) { .tiles { grid-template-columns: 1fr; } }
+
+  section.card + section.card { margin-top: 12px; }
+  .chart { position: relative; height: 220px; touch-action: pan-y; }
+  .chart svg { display: block; width: 100%; height: 100%; overflow: visible; }
+  .chart text { font-size: 12px; fill: var(--text-muted); font-variant-numeric: tabular-nums; }
+  .chart .end-label { fill: var(--text-primary); font-weight: 600; font-size: 13px; }
+  .tooltip {
+    position: absolute; pointer-events: none; display: none;
+    background: var(--surface-1); border: 1px solid var(--border); border-radius: 8px;
+    padding: 6px 10px; font-size: 13px; white-space: nowrap;
+    box-shadow: 0 2px 8px rgb(0 0 0 / .12);
+  }
+  .tooltip .t-date { color: var(--text-secondary); }
+  details { margin-top: 12px; font-size: 14px; }
+  summary { cursor: pointer; color: var(--text-secondary); }
+
+  table { width: 100%; border-collapse: collapse; font-size: 14px; }
+  th { text-align: left; font-weight: 500; color: var(--text-secondary); padding: 0 8px 8px 0; }
+  td { padding: 10px 8px 10px 0; border-top: 1px solid var(--border); vertical-align: top; }
+  th:last-child, td:last-child { padding-right: 0; }
+  .num { text-align: right; font-variant-numeric: tabular-nums; white-space: nowrap; }
+  .project-name { font-weight: 600; }
+  .stale { display: block; font-size: 12px; color: var(--text-muted); font-weight: 400; }
+
+  footer { margin-top: 24px; font-size: 13px; color: var(--text-muted); }
+  footer p { margin: 0 0 6px; }
+  #error { display: none; margin: 0 0 12px; padding: 12px 16px; border: 1px solid var(--border); border-radius: 10px; color: var(--text-primary); }
+</style>
+</head>
+<body>
+<main>
+  <header>
+    <p class="eyebrow"><b>S</b>top <b>D</b>oomscrolling, <b>C</b>reate <b>V</b>alue</p>
+    <h1>SDCV</h1>
+    <p id="day">&nbsp;</p>
+  </header>
+
+  <p id="error" role="alert"></p>
+
+  <section class="card">
+    <p class="label">Lines written since SDCV</p>
+    <p class="hero-value" id="since">–</p>
+    <p class="sub" id="loc">&nbsp;</p>
+  </section>
+
+  <div class="tiles">
+    <div class="card tile">
+      <p class="label">Subscription spent</p>
+      <p class="value" id="spent">–</p>
+      <p class="sub" id="plan">&nbsp;</p>
+    </div>
+    <div class="card tile">
+      <p class="label">Value generated</p>
+      <p class="value" id="value">–</p>
+      <p class="sub">Real profit only</p>
+    </div>
+  </div>
+
+  <section class="card">
+    <h2>Lines written since SDCV, by day</h2>
+    <div class="chart" id="chart" aria-label="Line chart of cumulative lines written since SDCV, by day">
+      <div class="tooltip" id="tooltip"></div>
+    </div>
+    <details>
+      <summary>Show as table</summary>
+      <table>
+        <thead><tr><th>Date</th><th class="num">Since SDCV</th><th class="num">Codebase</th></tr></thead>
+        <tbody id="history-rows"></tbody>
+      </table>
+    </details>
+  </section>
+
+  <section class="card">
+    <h2>Projects</h2>
+    <table>
+      <thead><tr><th>Project</th><th class="num">Since SDCV</th><th class="num">Codebase</th><th class="num">Last commit</th></tr></thead>
+      <tbody id="projects"></tbody>
+    </table>
+  </section>
+
+  <footer>
+    <p id="updated">&nbsp;</p>
+    <p>Lines are non-blank lines in code files on each project's main branch. "Since SDCV" adds up lines added in commits made after the start. Lockfiles, dependencies, build output, minified and generated files don't count.</p>
+  </footer>
+</main>
+
+<script type="module">
+  import { dateInZone, dayNumber, chargeCount, niceCeil, formatMoney, formatInt, formatShortDate } from './calc.mjs';
+
+  const $ = (id) => document.getElementById(id);
+  const esc = (s) => String(s).replace(/[&<>"]/g, (c) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c]));
+  const compact = (n) => (n >= 1000 ? `${+(n / 1000).toFixed(n >= 10000 ? 0 : 1)}k` : String(n));
+
+  async function getJson(path) {
+    const res = await fetch(`${path}?v=${Date.now()}`, { cache: 'no-store' });
+    if (!res.ok) throw new Error(`${path}: HTTP ${res.status}`);
+    return res.json();
+  }
+
+  function renderChart(el, rows) {
+    el.querySelector('svg')?.remove();
+    const tooltip = $('tooltip');
+    const W = el.clientWidth, H = el.clientHeight;
+    const m = { top: 16, right: 16, bottom: 28, left: 40 };
+    const iw = W - m.left - m.right, ih = H - m.top - m.bottom;
+    const ts = rows.map((r) => Date.parse(`${r.date}T12:00:00Z`));
+    const t0 = ts[0], t1 = ts[ts.length - 1];
+    const x = (t) => m.left + (t1 === t0 ? iw / 2 : ((t - t0) / (t1 - t0)) * iw);
+    const yMax = niceCeil(Math.max(...rows.map((r) => r.since_sdcv)));
+    const y = (v) => m.top + ih - (v / yMax) * ih;
+    const pts = rows.map((r, i) => ({ x: x(ts[i]), y: y(r.since_sdcv), r }));
+    const last = pts[pts.length - 1];
+
+    const grid = [0, yMax / 2, yMax].map((v) =>
+      `<line x1="${m.left}" x2="${W - m.right}" y1="${y(v)}" y2="${y(v)}" stroke="var(--grid)" stroke-width="1"/>` +
+      `<text x="${m.left - 8}" y="${y(v) + 4}" text-anchor="end">${compact(v)}</text>`).join('');
+    const xLabels = [`<text x="${pts[0].x}" y="${H - 6}" text-anchor="${pts.length > 1 ? 'start' : 'middle'}">${formatShortDate(rows[0].date)}</text>`];
+    if (pts.length > 1) xLabels.push(`<text x="${last.x}" y="${H - 6}" text-anchor="end">${formatShortDate(last.r.date)}</text>`);
+    const path = pts.map((p, i) => `${i ? 'L' : 'M'}${p.x},${p.y}`).join(' ');
+    const labelAnchor = last.x > W - 80 ? 'end' : 'start';
+    const labelX = labelAnchor === 'end' ? last.x - 10 : last.x + 10;
+
+    el.insertAdjacentHTML('afterbegin', `
+      <svg viewBox="0 0 ${W} ${H}" role="img" aria-label="Cumulative lines written since SDCV">
+        ${grid}${xLabels.join('')}
+        <path d="${path}" fill="none" stroke="var(--series-1)" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/>
+        <circle cx="${last.x}" cy="${last.y}" r="4" fill="var(--series-1)" stroke="var(--surface-1)" stroke-width="2"/>
+        <text class="end-label" x="${labelX}" y="${last.y - 10}" text-anchor="${labelAnchor}">${formatInt(last.r.since_sdcv)}</text>
+        <line class="crosshair" x1="0" x2="0" y1="${m.top}" y2="${m.top + ih}" stroke="var(--text-muted)" stroke-width="1" stroke-dasharray="3 3" visibility="hidden"/>
+        <circle class="hover-dot" r="4" fill="var(--series-1)" stroke="var(--surface-1)" stroke-width="2" visibility="hidden"/>
+        <rect x="${m.left}" y="0" width="${iw}" height="${H}" fill="transparent"/>
+      </svg>`);
+
+    const svg = el.querySelector('svg');
+    const cross = svg.querySelector('.crosshair');
+    const dot = svg.querySelector('.hover-dot');
+    const hide = () => { cross.setAttribute('visibility', 'hidden'); dot.setAttribute('visibility', 'hidden'); tooltip.style.display = 'none'; };
+    svg.addEventListener('pointermove', (e) => {
+      const px = e.clientX - svg.getBoundingClientRect().left;
+      const p = pts.reduce((best, q) => (Math.abs(q.x - px) < Math.abs(best.x - px) ? q : best));
+      cross.setAttribute('x1', p.x); cross.setAttribute('x2', p.x); cross.setAttribute('visibility', 'visible');
+      dot.setAttribute('cx', p.x); dot.setAttribute('cy', p.y); dot.setAttribute('visibility', 'visible');
+      tooltip.innerHTML = `<span class="t-date">${formatShortDate(p.r.date)}</span> · <strong>${formatInt(p.r.since_sdcv)}</strong> lines`;
+      tooltip.style.display = 'block';
+      const tw = tooltip.offsetWidth;
+      tooltip.style.left = `${Math.min(Math.max(p.x - tw / 2, 0), W - tw)}px`;
+      tooltip.style.top = `${Math.max(p.y - 44, 0)}px`;
+    });
+    svg.addEventListener('pointerleave', hide);
+  }
+
+  try {
+    const [config, stats, history] = await Promise.all([getJson('config.json'), getJson('data/stats.json'), getJson('data/history.json')]);
+    const today = dateInZone(new Date());
+    const start = config.sdcv_start;
+    const startLabel = new Intl.DateTimeFormat('en-US', { dateStyle: 'medium', timeStyle: 'short', timeZone: 'America/Toronto' }).format(new Date(start));
+    $('day').innerHTML = `<strong>Day ${dayNumber(start.slice(0, 10), today)}</strong> · started ${esc(startLabel)}`;
+
+    $('since').textContent = formatInt(stats.totals.since_sdcv);
+    $('loc').textContent = `${formatInt(stats.totals.loc)} lines across ${stats.projects.length} codebases`;
+
+    const sub = config.subscription;
+    const charges = chargeCount(sub.first_charge, sub.charge_day, today);
+    $('spent').textContent = formatMoney(charges * sub.amount, sub.currency);
+    $('plan').textContent = `${sub.plan} · ${formatMoney(sub.amount, sub.currency)} on the ${sub.charge_day}th · ${charges} ${charges === 1 ? 'charge' : 'charges'}`;
+    $('value').textContent = formatMoney(config.value_generated.amount, config.value_generated.currency);
+
+    $('projects').innerHTML = [...stats.projects]
+      .sort((a, b) => b.since_sdcv - a.since_sdcv || b.loc - a.loc)
+      .map((p) => `<tr>
+        <td><span class="project-name">${esc(p.name)}</span>${p.stale_since ? `<span class="stale">⚠ Stale since ${formatShortDate(p.stale_since)}</span>` : ''}</td>
+        <td class="num">${formatInt(p.since_sdcv)}</td>
+        <td class="num">${formatInt(p.loc)}</td>
+        <td class="num">${p.last_commit ? formatShortDate(p.last_commit) : '–'}</td>
+      </tr>`).join('');
+
+    $('history-rows').innerHTML = [...history].reverse()
+      .map((r) => `<tr><td>${formatShortDate(r.date)}</td><td class="num">${formatInt(r.since_sdcv)}</td><td class="num">${formatInt(r.loc)}</td></tr>`).join('');
+
+    const updated = new Intl.DateTimeFormat('en-US', { dateStyle: 'medium', timeStyle: 'short', timeZone: 'America/Toronto' }).format(new Date(stats.updated_at));
+    $('updated').textContent = `Updated ${updated} ET`;
+
+    const chart = $('chart');
+    if (history.length) {
+      renderChart(chart, history);
+      let raf;
+      new ResizeObserver(() => { cancelAnimationFrame(raf); raf = requestAnimationFrame(() => renderChart(chart, history)); }).observe(chart);
+    }
+  } catch (err) {
+    $('error').textContent = `Couldn't load the numbers (${err.message}). Try again in a minute.`;
+    $('error').style.display = 'block';
+  }
+</script>
+</body>
+</html>
