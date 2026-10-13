@@ -52,6 +52,9 @@ jobs:
           mkdir -p _site/data
           cp index.html calc.mjs config.json _site/
           cp data/*.json _site/data/
+          # Version the module import so a fresh index.html never pairs with a cached old calc.mjs.
+          sed -i "s#'./calc.mjs'#'./calc.mjs?v=${GITHUB_SHA::7}'#" _site/index.html
+          grep -q "calc.mjs?v=" _site/index.html
       - uses: actions/configure-pages@v5
       - uses: actions/upload-pages-artifact@v4
         with:

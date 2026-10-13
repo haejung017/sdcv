@@ -272,6 +272,16 @@
     $('error').textContent = `Couldn't load the numbers (${err.message}). Try again in a minute.`;
     $('error').style.display = 'block';
   }
+  window.sdcvRendered = true;
+</script>
+<script>
+  // If the module above never ran (e.g. a stale cached calc.mjs right after a deploy), say so instead of showing blanks.
+  setTimeout(function () {
+    if (window.sdcvRendered) return;
+    var el = document.getElementById('error');
+    el.textContent = "The page didn't load properly. Try a hard refresh (Ctrl+Shift+R, or pull down to reload on a phone).";
+    el.style.display = 'block';
+  }, 8000);
 </script>
 </body>
 </html>
