@@ -133,10 +133,11 @@ Added 2026-10-13 at Jay's request: the major AI headlines every morning, free, w
   - A feed that fails is skipped with a warning. If every feed fails, the previous `news.json` stays.
 - **Picking** (`selectNews` in `scripts/news-lib.mjs`):
   - Items published in the last `hours` (24) count. A feed can override this.
-  - At most `per_source` (2) items come from each feed, and at most `limit` (10) in total.
+  - At most `per_source` (5) items come from each feed, and at most `limit` (20) in total. Jay raised these from 2 and 10 on 2026-10-13. With a cap of 2, a busy day filled only 12 slots.
   - Feeds marked `"lab": true` (OpenAI, Google DeepMind, Anthropic) come first. Everything is newest first within each group.
   - A repeated link or headline appears once.
-- **The limit is deliberate.** A short list, refreshed once a day, can't turn into a new feed to scroll.
+- **The limit is deliberate.** A capped list, refreshed once a day, can't turn into a new feed to scroll.
+- **Ranking by importance** is done outside the page: Jay runs `/ai-news` in Claude Code, which reads `data/news.json` and picks a top 10. That command is a personal skill on Jay's PC, not part of this repo.
 - **Anthropic** has no official feed. It uses a community mirror (`Olshansk/rss-feeds`) that dates posts by day only, at midnight UTC. It gets `"hours": 48`, so a post from yesterday afternoon still shows at 6 AM. The page shows any midnight-UTC timestamp as a date, not "10h ago".
 - **The page** escapes all feed text, links only to `http(s)` URLs (opening in a new tab), and hides the box if `news.json` can't load.
 - **No AI summary.** That would need a paid API key.

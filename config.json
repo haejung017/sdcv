@@ -9,8 +9,8 @@
     { "name": "POCRD",     "repo": "haejung017/POCRD",     "baseline": "89d452cf3a0e158388d5de6d75e56c016cb6257d", "exclude": [] }
   ],
   "news": {
-    "limit": 10,
-    "per_source": 2,
+    "limit": 20,
+    "per_source": 5,
     "hours": 24,
     "feeds": [
       { "name": "OpenAI",          "url": "https://openai.com/news/rss.xml", "lab": true },
