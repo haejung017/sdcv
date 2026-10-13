@@ -1,0 +1,37 @@
+{
+  "updated_at": "2026-10-13T16:59:49.988Z",
+  "projects": [
+    {
+      "name": "Libriso",
+      "loc": 34792,
+      "since_sdcv": 0,
+      "last_commit": "2026-10-13T12:46:06-04:00",
+      "stale_since": null
+    },
+    {
+      "name": "ReportGen",
+      "loc": 19743,
+      "since_sdcv": 0,
+      "last_commit": "2026-10-13T12:33:32-04:00",
+      "stale_since": null
+    },
+    {
+      "name": "TheClimb",
+      "loc": 6508,
+      "since_sdcv": 0,
+      "last_commit": "2026-10-06T12:06:11-04:00",
+      "stale_since": null
+    },
+    {
+      "name": "POCRD",
+      "loc": 6918,
+      "since_sdcv": 0,
+      "last_commit": "2026-08-19T12:19:34-04:00",
+      "stale_since": null
+    }
+  ],
+  "totals": {
+    "loc": 67961,
+    "since_sdcv": 0
+  }
+}

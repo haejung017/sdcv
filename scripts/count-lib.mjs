@@ -18,7 +18,7 @@ export function isCounted(path, extraExcludes = []) {
   const lower = p.toLowerCase();
   const dot = lower.lastIndexOf('.');
   if (dot < 0 || !CODE_EXTENSIONS.has(lower.slice(dot))) return false;
-  if (/\.min\.(js|css)$/.test(lower)) return false;
+  if (/\.min\.(m?js|cjs|css)$/.test(lower)) return false;
   if (p.split('/').slice(0, -1).some((dir) => EXCLUDED_DIRS.has(dir))) return false;
   return !extraExcludes.some((ex) => p === ex || p.startsWith(ex.replace(/\/$/, '') + '/'));
 }
@@ -31,9 +31,14 @@ function renamedTo(path) {
   return path.split(' => ')[1];
 }
 
-export function parseNumstat(output, extraExcludes = []) {
+// `output` is from `git log --numstat --format=@%aI`: each commit starts with "@<author date>".
+// With `since`, commits authored before it are skipped (e.g. an old branch merged later).
+export function parseNumstat(output, extraExcludes = [], since = null) {
   let added = 0;
+  let include = true;
   for (const line of output.split('\n')) {
+    if (line.startsWith('@')) { include = !since || new Date(line.slice(1)) >= since; continue; }
+    if (!include) continue;
     const [add, , ...rest] = line.split('\t');
     if (!rest.length || add === '-') continue;
     if (isCounted(renamedTo(rest.join('\t')), extraExcludes)) added += Number(add);
@@ -63,21 +68,22 @@ export function countLoc(dir, extraExcludes = []) {
   return countLocByFile(dir, extraExcludes).reduce((sum, f) => sum + f.lines, 0);
 }
 
-// Lines added in commits after `baseline`. Throws if the baseline is unknown.
-export function countSince(dir, baseline, extraExcludes = []) {
+// Lines added in commits after `baseline` (and authored at or after `since`, if given).
+// Throws if the baseline is unknown.
+export function countSince(dir, baseline, extraExcludes = [], since = null) {
   git(dir, 'cat-file', '-e', `${baseline}^{commit}`);
-  return parseNumstat(git(dir, 'log', '--numstat', '--format=', `${baseline}..HEAD`), extraExcludes);
+  return parseNumstat(git(dir, 'log', '--numstat', '--format=@%aI', `${baseline}..HEAD`), extraExcludes, since);
 }
 
 export function lastCommit(dir) {
   return git(dir, 'log', '-1', '--format=%cI').trim();
 }
 
-export function countProject(dir, project) {
+export function countProject(dir, project, since = null) {
   const exclude = project.exclude ?? [];
   return {
     loc: countLoc(dir, exclude),
-    since_sdcv: countSince(dir, project.baseline, exclude),
+    since_sdcv: countSince(dir, project.baseline, exclude, since),
     last_commit: lastCommit(dir),
   };
 }

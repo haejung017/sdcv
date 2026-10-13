@@ -15,6 +15,7 @@ test('isCounted keeps code files and drops excluded ones', () => {
   assert.equal(isCounted('package-lock.json'), false);
   assert.equal(isCounted('node_modules/x/index.js'), false);
   assert.equal(isCounted('www/lib/pdf.min.js'), false);
+  assert.equal(isCounted('www/pdfjs/pdf.min.mjs'), false);
   assert.equal(isCounted('renv/activate.R'), false);
   assert.equal(isCounted('python/.venv/lib/a.py'), false);
   assert.equal(isCounted('www/pdfjs/pdf.js', ['www/pdfjs']), false);
@@ -33,6 +34,17 @@ test('parseNumstat sums additions of counted files, resolving renames', () => {
   ].join('\n');
   assert.equal(parseNumstat(out), 6);
   assert.equal(parseNumstat(out, ['src/new']), 4);
+});
+
+test('parseNumstat skips commits authored before the start date', () => {
+  const out = [
+    '@2026-10-13T11:00:00-04:00', '', '5\t0\tnew.js',
+    '@2026-10-10T15:00:00-04:00', '', '7\t0\told.js',
+    '',
+  ].join('\n');
+  const start = new Date('2026-10-13T10:30:00-04:00');
+  assert.equal(parseNumstat(out, [], start), 5);
+  assert.equal(parseNumstat(out), 12);
 });
 
 function makeRepo() {
@@ -71,6 +83,7 @@ test('countSince sums additions after the baseline commit', () => {
     assert.equal(countSince(r.dir, baseline), 6);
     assert.equal(countSince(r.dir, r.git('rev-parse', 'HEAD')), 0);
     assert.throws(() => countSince(r.dir, 'deadbeefdeadbeefdeadbeefdeadbeefdeadbeef'));
+    assert.equal(countSince(r.dir, baseline, [], new Date(Date.now() + 86400000)), 0);
   } finally { r.cleanup(); }
 });
 
