@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-13T21:00:18.372Z",
+  "updated_at": "2026-10-13T21:12:27.705Z",
   "items": [
     {
       "title": "Developing Gemini 4 Argon responsibly and safely",
@@ -26,28 +26,10 @@
       "published": "2026-10-13T12:00:00.000Z"
     },
     {
-      "title": "OpenAI employee arrested for allegedly planting a bug in a conference room",
-      "url": "https://www.theverge.com/ai-artificial-intelligence/1010642/openai-employee-arrested-recording-device",
-      "source": "The Verge",
-      "published": "2026-10-13T20:45:25.000Z"
-    },
-    {
       "title": "Judge orders OpenAI to turn over hiring records in Apple trade secrets case",
       "url": "https://techcrunch.com/2026/10/13/judge-orders-openai-to-turn-over-hiring-records-in-apple-trade-secrets-case/",
       "source": "TechCrunch",
       "published": "2026-10-13T20:36:44.000Z"
-    },
-    {
-      "title": "Shopify opens its catalog up to more AI agents",
-      "url": "https://www.theverge.com/news/1010365/shopify-opens-its-catalog-up-to-more-ai-agents",
-      "source": "The Verge",
-      "published": "2026-10-13T19:42:42.000Z"
-    },
-    {
-      "title": "Xbox is officially embracing the chaos of AI-powered game ports",
-      "url": "https://www.theverge.com/news/1010406/xbox-labs-game-decompiling-emulation-exploration",
-      "source": "The Verge",
-      "published": "2026-10-13T19:00:48.000Z"
     },
     {
       "title": "Flox Intelligence is building AI to keep wildlife away from trains, airports, and roads",
@@ -104,10 +86,28 @@
       "published": "2026-10-13T17:00:39.000Z"
     },
     {
+      "title": "Google makes it easier to launch your vibe-coded apps",
+      "url": "https://www.theverge.com/tech/1009066/google-play-vibe-coded-android-apps-launch",
+      "source": "The Verge",
+      "published": "2026-10-13T17:00:00.000Z"
+    },
+    {
+      "title": "Actress Mia Goth says it’s ‘incomprehensible’ that Instagram allowed an AI image of her to spread",
+      "url": "https://www.theverge.com/ai-artificial-intelligence/1010277/mia-goth-instagram-ai-shirt-deepfake-divorce",
+      "source": "The Verge",
+      "published": "2026-10-13T16:42:51.000Z"
+    },
+    {
       "title": "Gemini 4 Argon begins rolling out in Gemini app and Antigravity, but only if you pay",
       "url": "https://arstechnica.com/ai/2026/10/gemini-4-argon-begins-rolling-out-in-gemini-app-and-antigravity-but-only-if-you-pay/",
       "source": "Ars Technica",
       "published": "2026-10-13T16:00:02.000Z"
+    },
+    {
+      "title": "Google finally releases Gemini 4 Argon",
+      "url": "https://www.theverge.com/ai-artificial-intelligence/1009862/google-releases-gemini-4-argon",
+      "source": "The Verge",
+      "published": "2026-10-13T16:00:00.000Z"
     },
     {
       "title": "They war-gamed dimming the Sun. It went even worse than you think.",
