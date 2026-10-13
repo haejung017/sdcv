@@ -12,6 +12,13 @@ export function dayNumber(startYmd, todayYmd) {
   return Math.round((utcDay(todayYmd) - utcDay(startYmd)) / DAY_MS) + 1;
 }
 
+// Milliseconds -> "12d 03h 04m 05s" (negative counts as zero).
+export function formatElapsed(ms) {
+  const s = Math.max(0, Math.floor(ms / 1000));
+  const pad = (n) => String(n).padStart(2, '0');
+  return `${Math.floor(s / 86400)}d ${pad(Math.floor(s / 3600) % 24)}h ${pad(Math.floor(s / 60) % 60)}m ${pad(s % 60)}s`;
+}
+
 // Charge dates on `chargeDay` of each month, from `firstChargeYmd` up to `todayYmd`, inclusive.
 export function chargeCount(firstChargeYmd, chargeDay, todayYmd) {
   if (todayYmd < firstChargeYmd) return 0;

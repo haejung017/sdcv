@@ -1,6 +1,13 @@
 import { test } from 'node:test';
 import assert from 'node:assert/strict';
-import { dateInZone, dayNumber, chargeCount, withTax, niceCeil, formatMoney, formatInt, formatShortDate } from '../calc.mjs';
+import { dateInZone, dayNumber, chargeCount, withTax, niceCeil, formatMoney, formatInt, formatShortDate, formatElapsed } from '../calc.mjs';
+
+test('formatElapsed shows days, hours, minutes, seconds', () => {
+  assert.equal(formatElapsed(0), '0d 00h 00m 00s');
+  assert.equal(formatElapsed(-5000), '0d 00h 00m 00s');
+  assert.equal(formatElapsed(((26 * 60 + 3) * 60 + 4) * 1000 + 999), '1d 02h 03m 04s');
+  assert.equal(formatElapsed(400 * 86400000), '400d 00h 00m 00s');
+});
 
 test('withTax adds tax per charge, rounded to cents, times the count', () => {
   assert.equal(withTax(28, 0.13), 31.64);

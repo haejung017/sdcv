@@ -65,7 +65,9 @@
   header { margin-bottom: 24px; }
   .eyebrow { margin: 0; font-size: 14px; color: var(--text-secondary); letter-spacing: .02em; }
   .eyebrow b { color: var(--text-primary); }
-  h1 { margin: 2px 0 0; font-size: 40px; line-height: 1.1; letter-spacing: .06em; font-weight: 700; }
+  .title-row { display: flex; flex-wrap: wrap; align-items: baseline; column-gap: 16px; margin-top: 2px; }
+  h1 { margin: 0; font-size: 40px; line-height: 1.1; letter-spacing: .06em; font-weight: 700; }
+  .clock { font-size: 20px; font-weight: 500; color: var(--text-secondary); font-variant-numeric: tabular-nums; white-space: nowrap; }
   #day { margin: 8px 0 0; color: var(--text-secondary); }
   #day strong { color: var(--text-primary); }
 
@@ -112,7 +114,10 @@
 <main>
   <header>
     <p class="eyebrow"><b>S</b>top <b>D</b>oomscrolling, <b>C</b>reate <b>V</b>alue</p>
-    <h1>SDCV</h1>
+    <div class="title-row">
+      <h1>SDCV</h1>
+      <span class="clock" id="clock" role="timer" aria-label="Time since SDCV started">&nbsp;</span>
+    </div>
     <p id="day">&nbsp;</p>
   </header>
 
@@ -166,7 +171,7 @@
 </main>
 
 <script type="module">
-  import { dateInZone, dayNumber, chargeCount, withTax, niceCeil, formatMoney, formatInt, formatShortDate } from './calc.mjs';
+  import { dateInZone, dayNumber, chargeCount, withTax, niceCeil, formatMoney, formatInt, formatShortDate, formatElapsed } from './calc.mjs';
 
   const $ = (id) => document.getElementById(id);
   const esc = (s) => String(s).replace(/[&<>"]/g, (c) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c]));
@@ -236,6 +241,10 @@
     const start = config.sdcv_start;
     const startLabel = new Intl.DateTimeFormat('en-US', { dateStyle: 'medium', timeStyle: 'short', timeZone: 'America/Toronto' }).format(new Date(start));
     $('day').innerHTML = `<strong>Day ${dayNumber(start.slice(0, 10), today)}</strong> · started ${esc(startLabel)}`;
+    const startMs = Date.parse(start);
+    const tick = () => { $('clock').textContent = formatElapsed(Date.now() - startMs); };
+    tick();
+    setInterval(tick, 1000);
 
     $('since').textContent = formatInt(stats.totals.since_sdcv);
     $('loc').textContent = `${formatInt(stats.totals.loc)} lines across ${stats.projects.length} codebases`;
