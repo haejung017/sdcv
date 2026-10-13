@@ -3,7 +3,7 @@
   "subscription": { "plan": "Claude Pro", "amount": 28, "tax_rate": 0.13, "tax_label": "HST", "currency": "CAD", "charge_day": 18, "first_charge": "2026-10-18" },
   "value_generated": { "amount": 0, "currency": "CAD" },
   "projects": [
-    { "name": "Libriso",   "repo": "haejung017/Libriso",   "baseline": "cadfcfe45bd46639cde09216d5e1229798a552ba", "exclude": [] },
+    { "name": "Libriso",   "repo": "haejung017/Libriso",   "baseline": null, "exclude": [] },
     { "name": "ReportGen", "repo": "haejung017/ReportGen", "baseline": "9edc44b384bbecbe57e47b16fd34cb724f1ed938", "exclude": ["www/userguide_v1.0.html", "www/quarto-skinny-extracted.css"] },
     { "name": "TheClimb",  "repo": "haejung017/TheClimb",  "baseline": "de2997c786a821325544b79215f1cbe5668ba8c6", "exclude": [] },
     { "name": "POCRD",     "repo": "haejung017/POCRD",     "baseline": "89d452cf3a0e158388d5de6d75e56c016cb6257d", "exclude": [] }

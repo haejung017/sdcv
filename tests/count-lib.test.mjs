@@ -87,6 +87,22 @@ test('countSince sums additions after the baseline commit', () => {
   } finally { r.cleanup(); }
 });
 
+test('countSince with no baseline counts every commit, including the first', () => {
+  const r = makeRepo();
+  try {
+    r.write('app.R', 'x <- 1\ny <- 2\n');
+    r.git('add', '-A');
+    r.git('commit', '-q', '-m', 'first');
+    r.write('b.js', '1\n2\n3\n');
+    r.git('add', '-A');
+    r.git('commit', '-q', '-m', 'second');
+    assert.equal(countSince(r.dir, null), 5);
+    assert.equal(countSince(r.dir, ''), 5);
+    assert.equal(countSince(r.dir, null, ['b.js']), 2);
+    assert.equal(countSince(r.dir, null, [], new Date(Date.now() + 86400000)), 0);
+  } finally { r.cleanup(); }
+});
+
 test('lastCommit returns an ISO timestamp', () => {
   const r = makeRepo();
   try {

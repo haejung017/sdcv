@@ -69,10 +69,12 @@ export function countLoc(dir, extraExcludes = []) {
 }
 
 // Lines added in commits after `baseline` (and authored at or after `since`, if given).
-// Throws if the baseline is unknown.
+// No baseline (null or "") means every commit on the branch, first one included:
+// for projects started after SDCV. Throws if a given baseline is unknown.
 export function countSince(dir, baseline, extraExcludes = [], since = null) {
-  git(dir, 'cat-file', '-e', `${baseline}^{commit}`);
-  return parseNumstat(git(dir, 'log', '--numstat', '--format=@%aI', `${baseline}..HEAD`), extraExcludes, since);
+  if (baseline) git(dir, 'cat-file', '-e', `${baseline}^{commit}`);
+  const range = baseline ? `${baseline}..HEAD` : 'HEAD';
+  return parseNumstat(git(dir, 'log', '--numstat', '--format=@%aI', range), extraExcludes, since);
 }
 
 export function lastCommit(dir) {

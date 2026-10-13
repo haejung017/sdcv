@@ -63,7 +63,13 @@ Both numbers use the **default branch only**.
 
 **Written since SDCV:** the sum of `git log --numstat` additions over commits after the baseline, on counted files only. This counts a changed line as added, which is how git reports it. Binary files show as `-` and count 0.
 
-**Only commits authored at or after `sdcv_start` count.** Merging an old branch later (Libriso has several) doesn't count its pre-SDCV work. This rule was added after the first real run: Libriso's 12:46 merge of Oct 10 commits showed as 2,091 "new" lines. Libriso's baseline was then moved to that merge (`cadfcfe`).
+**Only commits authored at or after `sdcv_start` count.** Merging an old branch later (Libriso has several) doesn't count its pre-SDCV work. This rule was added after the first real run: Libriso's 12:46 merge of Oct 10 commits showed as 2,091 "new" lines.
+
+**`"baseline": null`** counts every commit on the branch, including the first, still filtered by `sdcv_start`. Use it for:
+- **Projects started after SDCV,** so their first commit counts.
+- **Repos with ordinary git history.**
+
+Libriso uses it, which credits its 12:34 commit on Oct 13. **Keep a SHA baseline for repos uploaded as snapshots** ("Replace repository with contents" commits, as with ReportGen). Without one, months of older work would count as new on the upload day: ReportGen would have shown 15,296 lines.
 
 ## The robot (.github/workflows/update.yml)
 
