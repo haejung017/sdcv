@@ -112,6 +112,13 @@
   .news a:hover { text-decoration: underline; }
   .news a:visited { color: var(--text-secondary); }
   .news-meta { display: block; margin-top: 2px; font-size: 13px; color: var(--text-muted); }
+  .picks-label { margin: 0 0 10px; font-size: 14px; color: var(--text-secondary); }
+  .ranked li { display: grid; grid-template-columns: 1.75em 1fr; }
+  .rank { font-weight: 600; color: var(--text-muted); font-variant-numeric: tabular-nums; line-height: 1.35; }
+  .why { display: block; margin-top: 2px; font-size: 14px; line-height: 1.4; color: var(--text-secondary); }
+  #picks-skipped { margin: 0 0 4px; }
+  #news-all { margin-top: 8px; }
+  #news-all .news { margin-top: 12px; }
 
   footer { margin-top: 24px; font-size: 13px; color: var(--text-muted); }
   footer p { margin: 0 0 6px; }
@@ -174,6 +181,12 @@
 
   <section class="card" id="news-card" hidden>
     <h2>AI news</h2>
+    <div id="picks" hidden>
+      <p class="picks-label" id="picks-label"></p>
+      <ol class="news ranked" id="picks-list"></ol>
+      <p class="sub" id="picks-skipped"></p>
+      <details id="news-all"><summary id="news-all-summary"></summary></details>
+    </div>
     <ol class="news" id="news"></ol>
     <p class="sub" id="news-note">&nbsp;</p>
   </section>
@@ -249,22 +262,48 @@
     svg.addEventListener('pointerleave', hide);
   }
 
-  // Headlines come from outside feeds: escape the text and allow only http(s) links.
-  function renderNews(news) {
-    const items = news.items.filter((it) => /^https?:\/\//i.test(it.url));
+  // Headlines come from outside feeds and picks from Claude: escape the text, allow only http(s) links.
+  const safeLink = (it) => /^https?:\/\//i.test(it.url);
+  const link = (it) => `<a href="${esc(it.url)}" target="_blank" rel="noopener noreferrer">${esc(it.title)}</a>`;
+  const etTime = (iso, opts) => new Intl.DateTimeFormat('en-US', { ...opts, timeZone: 'America/Toronto' }).format(new Date(iso));
+
+  function renderNews(news, picks) {
+    const items = news.items.filter(safeLink);
     $('news').innerHTML = items.map((it) => `<li>
-      <a href="${esc(it.url)}" target="_blank" rel="noopener noreferrer">${esc(it.title)}</a>
+      ${link(it)}
       <span class="news-meta">${esc(it.source)} · ${formatAgo(it.published)}</span>
     </li>`).join('');
-    const fetched = new Intl.DateTimeFormat('en-US', { dateStyle: 'medium', timeStyle: 'short', timeZone: 'America/Toronto' }).format(new Date(news.updated_at));
+    const fetched = etTime(news.updated_at, { dateStyle: 'medium', timeStyle: 'short' });
     $('news-note').textContent = items.length
       ? `Newest stories of the past day, lab announcements first · fetched ${fetched} ET`
       : `No new AI stories in the past day · checked ${fetched} ET`;
+
+    // Claude's picks (from /ai-news) show only on the day they were made, so an old ranking
+    // never sits above a newer list. The full list then folds away beneath them.
+    const ranked = picks?.items?.filter(safeLink) ?? [];
+    if (ranked.length && dateInZone(new Date(picks.ranked_at)) === dateInZone(new Date(news.updated_at))) {
+      $('picks-label').textContent = `Claude's top ${ranked.length}, ranked ${etTime(picks.ranked_at, { timeStyle: 'short' })} ET`;
+      $('picks-list').innerHTML = ranked.map((it, i) => `<li>
+        <span class="rank">${i + 1}</span>
+        <div>
+          ${link(it)}
+          <span class="why">${esc(it.why)}</span>
+          <span class="news-meta">${esc(it.source)}${it.tags?.length ? ` · → ${it.tags.map(esc).join(', ')}` : ''}</span>
+        </div>
+      </li>`).join('');
+      $('picks-skipped').textContent = picks.skipped ? `Skipped: ${picks.skipped}` : '';
+      $('picks-skipped').hidden = !picks.skipped;
+      $('news-all-summary').textContent = `All ${items.length} headlines`;
+      $('news-all').append($('news'));
+      $('picks').hidden = false;
+    }
     $('news-card').hidden = false;
   }
 
   // The news box is optional: if it can't load, the rest of the page still shows.
-  getJson('data/news.json').then(renderNews).catch(() => {});
+  Promise.all([getJson('data/news.json'), getJson('data/picks.json').catch(() => null)])
+    .then(([news, picks]) => renderNews(news, picks))
+    .catch(() => {});
 
   try {
     const [config, stats, history] = await Promise.all([getJson('config.json'), getJson('data/stats.json'), getJson('data/history.json')]);

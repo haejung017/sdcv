@@ -137,7 +137,12 @@ Added 2026-10-13 at Jay's request: the major AI headlines every morning, free, w
   - Feeds marked `"lab": true` (OpenAI, Google DeepMind, Anthropic) come first. Everything is newest first within each group.
   - A repeated link or headline appears once.
 - **The limit is deliberate.** A capped list, refreshed once a day, can't turn into a new feed to scroll.
-- **Ranking by importance** is done outside the page: Jay runs `/ai-news` in Claude Code, which reads `data/news.json` and picks a top 10. That command is a personal skill on Jay's PC, not part of this repo.
+- **Ranking by importance** happens outside the page. Jay runs `/ai-news` in Claude Code, a personal skill on Jay's PC that isn't part of this repo.
+  - Claude reads `data/news.json`, picks a top 10, and pipes them to `scripts/save-picks.mjs`.
+  - `save-picks.mjs` checks them with `normalizePicks` in `scripts/picks-lib.mjs`: 1–10 stories, http(s) links, short text, at most 3 tags. It stamps `ranked_at` and writes `data/picks.json`, which Claude then commits and pushes.
+  - The page shows the picks ("Claude's top 10", each with a one-line reason and tags) above the full list, which folds into "All 20 headlines".
+  - Picks show only when they were made on the same Eastern date as the current `news.json`, so yesterday's ranking never sits above today's headlines. With no fresh picks, the box shows the plain list.
+  - The reasons are public: the skill keeps them about the technology and never mentions Jay's employer or private projects.
 - **Anthropic** has no official feed. It uses a community mirror (`Olshansk/rss-feeds`) that dates posts by day only, at midnight UTC. It gets `"hours": 48`, so a post from yesterday afternoon still shows at 6 AM. The page shows any midnight-UTC timestamp as a date, not "10h ago".
 - **The page** escapes all feed text, links only to `http(s)` URLs (opening in a new tab), and hides the box if `news.json` can't load.
 - **No AI summary.** That would need a paid API key.
