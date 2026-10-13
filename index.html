@@ -119,6 +119,28 @@
   <p id="error" role="alert"></p>
 
   <section class="card">
+    <h2>Projects</h2>
+    <table>
+      <thead><tr><th>Project</th><th class="num">Since SDCV</th><th class="num">Codebase</th><th class="num">Last commit</th></tr></thead>
+      <tbody id="projects"></tbody>
+    </table>
+  </section>
+
+  <section class="card">
+    <h2>Lines written since SDCV, by day</h2>
+    <div class="chart" id="chart" aria-label="Line chart of cumulative lines written since SDCV, by day">
+      <div class="tooltip" id="tooltip"></div>
+    </div>
+    <details>
+      <summary>Show as table</summary>
+      <table>
+        <thead><tr><th>Date</th><th class="num">Since SDCV</th><th class="num">Codebase</th></tr></thead>
+        <tbody id="history-rows"></tbody>
+      </table>
+    </details>
+  </section>
+
+  <section class="card">
     <p class="label">Lines written since SDCV</p>
     <p class="hero-value" id="since">–</p>
     <p class="sub" id="loc">&nbsp;</p>
@@ -137,28 +159,6 @@
     </div>
   </div>
 
-  <section class="card">
-    <h2>Lines written since SDCV, by day</h2>
-    <div class="chart" id="chart" aria-label="Line chart of cumulative lines written since SDCV, by day">
-      <div class="tooltip" id="tooltip"></div>
-    </div>
-    <details>
-      <summary>Show as table</summary>
-      <table>
-        <thead><tr><th>Date</th><th class="num">Since SDCV</th><th class="num">Codebase</th></tr></thead>
-        <tbody id="history-rows"></tbody>
-      </table>
-    </details>
-  </section>
-
-  <section class="card">
-    <h2>Projects</h2>
-    <table>
-      <thead><tr><th>Project</th><th class="num">Since SDCV</th><th class="num">Codebase</th><th class="num">Last commit</th></tr></thead>
-      <tbody id="projects"></tbody>
-    </table>
-  </section>
-
   <footer>
     <p id="updated">&nbsp;</p>
     <p>Lines are non-blank lines in code files on each project's main branch. "Since SDCV" adds up lines added in commits made after the start. Lockfiles, dependencies, build output, minified and generated files don't count.</p>
@@ -166,7 +166,7 @@
 </main>
 
 <script type="module">
-  import { dateInZone, dayNumber, chargeCount, niceCeil, formatMoney, formatInt, formatShortDate } from './calc.mjs';
+  import { dateInZone, dayNumber, chargeCount, withTax, niceCeil, formatMoney, formatInt, formatShortDate } from './calc.mjs';
 
   const $ = (id) => document.getElementById(id);
   const esc = (s) => String(s).replace(/[&<>"]/g, (c) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c]));
@@ -242,8 +242,9 @@
 
     const sub = config.subscription;
     const charges = chargeCount(sub.first_charge, sub.charge_day, today);
-    $('spent').textContent = formatMoney(charges * sub.amount, sub.currency);
-    $('plan').textContent = `${sub.plan} · ${formatMoney(sub.amount, sub.currency)} on the ${sub.charge_day}th · ${charges} ${charges === 1 ? 'charge' : 'charges'}`;
+    const tax = sub.tax_rate ? ` + ${+(sub.tax_rate * 100).toFixed(3)}% ${sub.tax_label ?? 'tax'}` : '';
+    $('spent').textContent = formatMoney(withTax(sub.amount, sub.tax_rate, charges), sub.currency);
+    $('plan').textContent = `${sub.plan} · ${formatMoney(sub.amount, sub.currency)}${tax} = ${formatMoney(withTax(sub.amount, sub.tax_rate), sub.currency)} on the ${sub.charge_day}th · ${charges} ${charges === 1 ? 'charge' : 'charges'}`;
     $('value').textContent = formatMoney(config.value_generated.amount, config.value_generated.currency);
 
     $('projects').innerHTML = [...stats.projects]

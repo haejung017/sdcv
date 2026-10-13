@@ -1,6 +1,14 @@
 import { test } from 'node:test';
 import assert from 'node:assert/strict';
-import { dateInZone, dayNumber, chargeCount, niceCeil, formatMoney, formatInt, formatShortDate } from '../calc.mjs';
+import { dateInZone, dayNumber, chargeCount, withTax, niceCeil, formatMoney, formatInt, formatShortDate } from '../calc.mjs';
+
+test('withTax adds tax per charge, rounded to cents, times the count', () => {
+  assert.equal(withTax(28, 0.13), 31.64);
+  assert.equal(withTax(28, 0), 28);
+  assert.equal(withTax(28, undefined), 28);
+  assert.equal(withTax(28, 0.13, 3), 94.92);
+  assert.equal(withTax(28, 0.13, 0), 0);
+});
 
 test('dayNumber: start day is Day 1', () => {
   assert.equal(dayNumber('2026-10-13', '2026-10-13'), 1);

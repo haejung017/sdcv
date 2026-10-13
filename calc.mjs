@@ -20,6 +20,11 @@ export function chargeCount(firstChargeYmd, chargeDay, todayYmd) {
   return (ty - fy) * 12 + (tm - fm) + (td >= chargeDay ? 1 : 0);
 }
 
+// Each charge is amount + tax, rounded to the cent as on the card statement.
+export function withTax(amount, taxRate = 0, count = 1) {
+  return (Math.round(amount * (1 + (taxRate ?? 0)) * 100) * count) / 100;
+}
+
 export function niceCeil(n) {
   if (n <= 0) return 10;
   const p = 10 ** Math.floor(Math.log10(n));

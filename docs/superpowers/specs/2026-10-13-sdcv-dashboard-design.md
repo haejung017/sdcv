@@ -6,7 +6,7 @@ Date: 2026-10-13. Status: approved by Jay.
 
 A public page that tracks the SDCV journey (Stop Doomscrolling, Create Value). The start point is 2026-10-13 10:30 ET. It shows three numbers and nothing else:
 
-1. **Subscription spent.** Claude Pro, 28 CAD, charged on the 18th of each month. The first counted charge is 2026-10-18.
+1. **Subscription spent.** Claude Pro, 28 CAD + 13% HST (31.64 CAD), charged on the 18th of each month. The first counted charge is 2026-10-18.
 2. **Value generated.** CAD 0 until there is real profit. Jay sets it by hand.
 3. **Lines of code**, from Jay's GitHub repos:
    - **Headline:** lines written since SDCV.
@@ -35,7 +35,7 @@ scripts/count.test.mjs         tests (node --test)
 ```json
 {
   "sdcv_start": "2026-10-13T10:30:00-04:00",
-  "subscription": { "plan": "Claude Pro", "amount": 28, "currency": "CAD", "charge_day": 18, "first_charge": "2026-10-18" },
+  "subscription": { "plan": "Claude Pro", "amount": 28, "tax_rate": 0.13, "tax_label": "HST", "currency": "CAD", "charge_day": 18, "first_charge": "2026-10-18" },
   "value_generated": { "amount": 0, "currency": "CAD" },
   "projects": [
     { "name": "Libriso",   "repo": "haejung017/Libriso",   "baseline": "9d9055d" },
@@ -100,14 +100,14 @@ Both numbers use the **default branch only**.
 
 ## The page (index.html)
 
-**Layout, top to bottom:**
+**Layout, top to bottom** (Jay changed the order on 2026-10-13, after launch):
 1. **Header:** "SDCV · Stop Doomscrolling, Create Value", plus "Day N". Day 1 is 2026-10-13.
-2. **Three cards:**
-   - **Subscription spent:** calculated in the browser from `config.json`, as 28 × the number of charge dates from `first_charge` up to today. It stays correct even if the robot stops.
-   - **Value generated:** taken from `config.json`.
+2. **Per-project table:** name, written since SDCV, codebase size, last commit date, and a stale warning if needed.
+3. **One line chart:** cumulative lines written since SDCV, by day, drawn as inline SVG with no chart library.
+4. **Three cards:**
    - **Lines written since SDCV:** the big number, with codebase size beneath it.
-3. **Per-project table:** name, written since SDCV, codebase size, last commit date, and a stale warning if needed.
-4. **One line chart:** cumulative lines written since SDCV, by day, drawn as inline SVG with no chart library.
+   - **Subscription spent:** calculated in the browser from `config.json`, as 31.64 (28 + 13% HST, rounded to the cent) × the number of charge dates from `first_charge` up to today. It stays correct even if the robot stops.
+   - **Value generated:** taken from `config.json`.
 5. **Footer:** "Last updated …" and a one-line note on what counts.
 
 **Constraints:**
