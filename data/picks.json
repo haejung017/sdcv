@@ -1,0 +1,86 @@
+{
+  "ranked_at": "2026-10-13T21:12:01.192Z",
+  "items": [
+    {
+      "title": "Gemini 4 Argon: Built to solve your hardest problems",
+      "url": "https://deepmind.google/blog/introducing-gemini-4-argon/",
+      "source": "Google DeepMind · Ars Technica",
+      "why": "Google's new frontier model is out: #1 on the Vals Index, 1M-token context, strong at agentic coding and document analysis, API at $2 per million input tokens with 50% off through November. The new bar Claude gets measured against.",
+      "tags": [
+        "Claude Code"
+      ]
+    },
+    {
+      "title": "Run fast, private agents on-device with LFM2.5-24B-A2B",
+      "url": "https://huggingface.co/blog/LiquidAI/lfm25-24b-a2b",
+      "source": "Hugging Face",
+      "why": "An open-weight 24B model with only 2B active parameters, built for tool calling inside agent harnesses and supported by llama.cpp and vLLM from day one. A cheap local-agent candidate, though a 12 GB GPU will need quantization or offload.",
+      "tags": [
+        "Libriso"
+      ]
+    },
+    {
+      "title": "Shopify opens its catalog up to more AI agents",
+      "url": "https://www.theverge.com/news/1010365/shopify-opens-its-catalog-up-to-more-ai-agents",
+      "source": "The Verge",
+      "why": "Any shopper's AI agent can now browse and buy from over a billion Shopify listings, with budget rules and a human approving every purchase. A real-world template for letting agents act while a person signs off.",
+      "tags": [
+        "ReportGen"
+      ]
+    },
+    {
+      "title": "Open models have real benefits. Do they outweigh the risks?",
+      "url": "https://www.technologyreview.com/2026/10/13/1146366/open-models-have-real-benefits-do-they-outweigh-the-risks/",
+      "source": "MIT Technology Review",
+      "why": "An explainer, not news: it starts from Anthropic's warning that the open GLM-5.3 model can aid cyberattacks and weighs open-weight benefits against risks. Useful context on where rules for local models may head.",
+      "tags": [
+        "Libriso"
+      ]
+    },
+    {
+      "title": "Google wants to host your personal vibe-coded apps in the Play Store",
+      "url": "https://arstechnica.com/google/2026/10/google-wants-to-host-your-personal-vibe-coded-apps-in-the-play-store/",
+      "source": "Ars Technica",
+      "why": "The Play Store will let people privately host and share apps they built with AI, alongside new AI search for apps. Could become an easy home for personal tools that never need a public release.",
+      "tags": [
+        "TheClimb"
+      ]
+    },
+    {
+      "title": "Judge orders OpenAI to turn over hiring records in Apple trade secrets case",
+      "url": "https://techcrunch.com/2026/10/13/judge-orders-openai-to-turn-over-hiring-records-in-apple-trade-secrets-case/",
+      "source": "TechCrunch",
+      "why": "A court ordered OpenAI to hand over hiring records in Apple's trade-secrets case, a sign the AI talent war is moving into court. Ranked from the headline only.",
+      "tags": []
+    },
+    {
+      "title": "Disney offers $20M for Character.AI’s scandal-plagued chatbot tech",
+      "url": "https://arstechnica.com/tech-policy/2026/10/disney-offers-20m-for-character-ais-scandal-plagued-chatbot-tech/",
+      "source": "Ars Technica",
+      "why": "Disney's $20M offer for Character.AI's chatbot tech shows how far companion-chatbot startups have fallen after their safety scandals. Ranked from the headline only.",
+      "tags": []
+    },
+    {
+      "title": "Facebook will let you customize your feed algorithm using AI",
+      "url": "https://www.theverge.com/tech/1010344/meta-facebook-your-algorithm-ai",
+      "source": "The Verge · TechCrunch",
+      "why": "Facebook users will be able to steer their feed by telling an AI what they want, a first large test of plain-language control over a recommendation algorithm. Ranked from the headlines only.",
+      "tags": []
+    },
+    {
+      "title": "Xbox is officially embracing the chaos of AI-powered game ports",
+      "url": "https://www.theverge.com/news/1010406/xbox-labs-game-decompiling-emulation-exploration",
+      "source": "The Verge",
+      "why": "Xbox is backing AI-powered ports of older games, an example of AI doing large-scale work on legacy code. Ranked from the headline only.",
+      "tags": []
+    },
+    {
+      "title": "Pluto Security raises $42M as AI gives enterprise security teams a new headache",
+      "url": "https://techcrunch.com/2026/10/13/pluto-security-raises-42m-as-ai-gives-enterprise-security-teams-a-new-headache/",
+      "source": "TechCrunch",
+      "why": "A $42M round for a startup tackling the security problems AI creates inside companies, a steady signal that AI governance is becoming its own product category. Ranked from the headline only.",
+      "tags": []
+    }
+  ],
+  "skipped": "An OpenAI customer story, an arrest report, two startup profiles, a smart-glasses review and a geoengineering piece"
+}
