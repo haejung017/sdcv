@@ -1,0 +1,11 @@
+{
+  "sdcv_start": "2026-10-13T10:30:00-04:00",
+  "subscription": { "plan": "Claude Pro", "amount": 28, "currency": "CAD", "charge_day": 18, "first_charge": "2026-10-18" },
+  "value_generated": { "amount": 0, "currency": "CAD" },
+  "projects": [
+    { "name": "Libriso",   "repo": "haejung017/Libriso",   "baseline": "9d9055ddba55c186a21b4d7a43005e5653a707e9", "exclude": [] },
+    { "name": "ReportGen", "repo": "haejung017/ReportGen", "baseline": "9edc44b384bbecbe57e47b16fd34cb724f1ed938", "exclude": [] },
+    { "name": "TheClimb",  "repo": "haejung017/TheClimb",  "baseline": "de2997c786a821325544b79215f1cbe5668ba8c6", "exclude": [] },
+    { "name": "POCRD",     "repo": "haejung017/POCRD",     "baseline": "89d452cf3a0e158388d5de6d75e56c016cb6257d", "exclude": [] }
+  ]
+}
