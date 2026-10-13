@@ -105,6 +105,14 @@
   .project-name { font-weight: 600; }
   .stale { display: block; font-size: 12px; color: var(--text-muted); font-weight: 400; }
 
+  .news { list-style: none; margin: 0; padding: 0; }
+  .news li { padding: 10px 0; border-top: 1px solid var(--border); overflow-wrap: anywhere; }
+  .news li:first-child { padding-top: 0; border-top: 0; }
+  .news a { color: var(--text-primary); font-weight: 500; line-height: 1.35; text-decoration: none; }
+  .news a:hover { text-decoration: underline; }
+  .news a:visited { color: var(--text-secondary); }
+  .news-meta { display: block; margin-top: 2px; font-size: 13px; color: var(--text-muted); }
+
   footer { margin-top: 24px; font-size: 13px; color: var(--text-muted); }
   footer p { margin: 0 0 6px; }
   #error { display: none; margin: 0 0 12px; padding: 12px 16px; border: 1px solid var(--border); border-radius: 10px; color: var(--text-primary); }
@@ -164,6 +172,12 @@
     </div>
   </div>
 
+  <section class="card" id="news-card" hidden>
+    <h2>AI news</h2>
+    <ol class="news" id="news"></ol>
+    <p class="sub" id="news-note">&nbsp;</p>
+  </section>
+
   <footer>
     <p id="updated">&nbsp;</p>
     <p>Lines are non-blank lines in code files on each project's main branch. "Since SDCV" adds up lines added in commits made after the start. Lockfiles, dependencies, build output, minified and generated files don't count.</p>
@@ -171,7 +185,7 @@
 </main>
 
 <script type="module">
-  import { dateInZone, dayNumber, chargeCount, withTax, niceCeil, formatMoney, formatInt, formatShortDate, formatElapsed } from './calc.mjs';
+  import { dateInZone, dayNumber, chargeCount, withTax, niceCeil, formatMoney, formatInt, formatShortDate, formatElapsed, formatAgo } from './calc.mjs';
 
   const $ = (id) => document.getElementById(id);
   const esc = (s) => String(s).replace(/[&<>"]/g, (c) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c]));
@@ -234,6 +248,23 @@
     });
     svg.addEventListener('pointerleave', hide);
   }
+
+  // Headlines come from outside feeds: escape the text and allow only http(s) links.
+  function renderNews(news) {
+    const items = news.items.filter((it) => /^https?:\/\//i.test(it.url));
+    $('news').innerHTML = items.map((it) => `<li>
+      <a href="${esc(it.url)}" target="_blank" rel="noopener noreferrer">${esc(it.title)}</a>
+      <span class="news-meta">${esc(it.source)} · ${formatAgo(it.published)}</span>
+    </li>`).join('');
+    const fetched = new Intl.DateTimeFormat('en-US', { dateStyle: 'medium', timeStyle: 'short', timeZone: 'America/Toronto' }).format(new Date(news.updated_at));
+    $('news-note').textContent = items.length
+      ? `Newest stories of the past day, lab announcements first · fetched ${fetched} ET`
+      : `No new AI stories in the past day · checked ${fetched} ET`;
+    $('news-card').hidden = false;
+  }
+
+  // The news box is optional: if it can't load, the rest of the page still shows.
+  getJson('data/news.json').then(renderNews).catch(() => {});
 
   try {
     const [config, stats, history] = await Promise.all([getJson('config.json'), getJson('data/stats.json'), getJson('data/history.json')]);

@@ -7,5 +7,21 @@
     { "name": "ReportGen", "repo": "haejung017/ReportGen", "baseline": "9edc44b384bbecbe57e47b16fd34cb724f1ed938", "exclude": ["www/userguide_v1.0.html", "www/quarto-skinny-extracted.css"] },
     { "name": "TheClimb",  "repo": "haejung017/TheClimb",  "baseline": "de2997c786a821325544b79215f1cbe5668ba8c6", "exclude": [] },
     { "name": "POCRD",     "repo": "haejung017/POCRD",     "baseline": "89d452cf3a0e158388d5de6d75e56c016cb6257d", "exclude": [] }
-  ]
+  ],
+  "news": {
+    "limit": 10,
+    "per_source": 2,
+    "hours": 24,
+    "feeds": [
+      { "name": "OpenAI",          "url": "https://openai.com/news/rss.xml", "lab": true },
+      { "name": "Google DeepMind", "url": "https://deepmind.google/blog/rss.xml", "lab": true },
+      { "name": "Anthropic",       "url": "https://raw.githubusercontent.com/Olshansk/rss-feeds/main/feeds/feed_anthropic_news.xml", "lab": true, "hours": 48 },
+      { "name": "Hugging Face",    "url": "https://huggingface.co/blog/feed.xml" },
+      { "name": "Simon Willison",  "url": "https://simonwillison.net/atom/entries/" },
+      { "name": "The Verge",       "url": "https://www.theverge.com/rss/ai-artificial-intelligence/index.xml" },
+      { "name": "TechCrunch",      "url": "https://techcrunch.com/category/artificial-intelligence/feed/" },
+      { "name": "Ars Technica",    "url": "https://arstechnica.com/ai/feed/" },
+      { "name": "MIT Technology Review", "url": "https://www.technologyreview.com/topic/artificial-intelligence/feed" }
+    ]
+  }
 }

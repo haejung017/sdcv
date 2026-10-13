@@ -114,13 +114,32 @@ Libriso uses it, which credits its 12:34 commit on Oct 13. **Keep a SHA baseline
    - **Lines written since SDCV:** the big number, with codebase size beneath it.
    - **Subscription spent:** calculated in the browser from `config.json`, as 31.64 (28 + 13% HST, rounded to the cent) × the number of charge dates from `first_charge` up to today. It stays correct even if the robot stops.
    - **Value generated:** taken from `config.json`.
-5. **Footer:** "Last updated …" and a one-line note on what counts.
+5. **AI news** (added 2026-10-13, see below).
+6. **Footer:** "Last updated …" and a one-line note on what counts.
 
 **Constraints:**
 - Single file, no build step.
 - Works at 375 px width.
 - Light and dark themes via `prefers-color-scheme`.
 - Loads `config.json` and the data files with `fetch`, using cache-busting query strings.
+
+## AI news box
+
+Added 2026-10-13 at Jay's request: the major AI headlines every morning, free, with no API key and no Claude usage.
+
+- **Fetching.**
+  - The robot runs `scripts/news.mjs` after counting. It reads the RSS and Atom feeds listed under `"news"` in `config.json` and writes `data/news.json` as `{ updated_at, items: [{ title, url, source, published }] }`.
+  - The step has `continue-on-error`, so news can never block the numbers.
+  - A feed that fails is skipped with a warning. If every feed fails, the previous `news.json` stays.
+- **Picking** (`selectNews` in `scripts/news-lib.mjs`):
+  - Items published in the last `hours` (24) count. A feed can override this.
+  - At most `per_source` (2) items come from each feed, and at most `limit` (10) in total.
+  - Feeds marked `"lab": true` (OpenAI, Google DeepMind, Anthropic) come first. Everything is newest first within each group.
+  - A repeated link or headline appears once.
+- **The limit is deliberate.** A short list, refreshed once a day, can't turn into a new feed to scroll.
+- **Anthropic** has no official feed. It uses a community mirror (`Olshansk/rss-feeds`) that dates posts by day only, at midnight UTC. It gets `"hours": 48`, so a post from yesterday afternoon still shows at 6 AM. The page shows any midnight-UTC timestamp as a date, not "10h ago".
+- **The page** escapes all feed text, links only to `http(s)` URLs (opening in a new tab), and hides the box if `news.json` can't load.
+- **No AI summary.** That would need a paid API key.
 
 ## Testing
 
@@ -130,6 +149,7 @@ Libriso uses it, which credits its 12:34 commit on Oct 13. **Keep a SHA baseline
 
 ## Out of scope
 
+- AI-written news summaries.
 - Session-time tracking.
 - Claude.ai chat usage.
 - Projects that aren't on GitHub.

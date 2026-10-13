@@ -1,6 +1,16 @@
 import { test } from 'node:test';
 import assert from 'node:assert/strict';
-import { dateInZone, dayNumber, chargeCount, withTax, niceCeil, formatMoney, formatInt, formatShortDate, formatElapsed } from '../calc.mjs';
+import { dateInZone, dayNumber, chargeCount, withTax, niceCeil, formatMoney, formatInt, formatShortDate, formatElapsed, formatAgo } from '../calc.mjs';
+
+test('formatAgo: minutes, hours, then the date; date-only timestamps show the date', () => {
+  const now = Date.parse('2026-10-14T10:00:00Z');
+  assert.equal(formatAgo('2026-10-14T09:59:40.000Z', now), 'just now');
+  assert.equal(formatAgo('2026-10-14T10:05:00.000Z', now), 'just now');
+  assert.equal(formatAgo('2026-10-14T09:15:00.000Z', now), '45m ago');
+  assert.equal(formatAgo('2026-10-14T07:00:00.000Z', now), '3h ago');
+  assert.equal(formatAgo('2026-10-12T15:00:00.000Z', now), 'Oct 12');
+  assert.equal(formatAgo('2026-10-14T00:00:00.000Z', now), 'Oct 14');
+});
 
 test('formatElapsed shows days, hours, minutes, seconds', () => {
   assert.equal(formatElapsed(0), '0d 00h 00m 00s');

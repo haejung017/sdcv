@@ -38,6 +38,9 @@ jobs:
         run: bash scripts/clone.sh "$RUNNER_TEMP/repos"
       - name: Count lines
         run: node scripts/count.mjs --repos "$RUNNER_TEMP/repos"
+      - name: Fetch AI news
+        continue-on-error: true # the news box is optional; never block the numbers
+        run: node scripts/news.mjs
       - name: Save numbers
         run: |
           git config user.name "github-actions[bot]"

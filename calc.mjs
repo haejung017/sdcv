@@ -48,6 +48,18 @@ export function formatInt(n) {
   return n.toLocaleString('en-US');
 }
 
+// "just now", "45m ago", "3h ago", then the date once a day has passed. A timestamp at exactly
+// midnight UTC comes from a feed that only gives the date, so it shows as that date.
+export function formatAgo(iso, nowMs = Date.now()) {
+  const t = new Date(iso);
+  if (t.getTime() % DAY_MS === 0) return formatShortDate(t.toISOString().slice(0, 10));
+  const mins = Math.floor((nowMs - t) / 60000);
+  if (mins < 1) return 'just now';
+  if (mins < 60) return `${mins}m ago`;
+  if (mins < 24 * 60) return `${Math.floor(mins / 60)}h ago`;
+  return formatShortDate(iso);
+}
+
 // "2026-10-13" or a full ISO timestamp -> "Oct 13" (the timestamp is read in Eastern time).
 export function formatShortDate(value) {
   const dateOnly = value.length === 10;
