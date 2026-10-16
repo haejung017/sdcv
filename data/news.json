@@ -1,113 +1,119 @@
 {
-  "updated_at": "2026-10-15T14:49:04.616Z",
+  "updated_at": "2026-10-16T14:43:02.301Z",
   "items": [
     {
-      "title": "Teaching students to think and learn through questions",
-      "url": "https://openai.com/index/teaching-students-to-think-and-learn-through-questions",
+      "title": "Bringing GPT-Rosalind to academic research labs",
+      "url": "https://openai.com/index/introducing-the-rosalind-academic-plan",
       "source": "OpenAI",
-      "published": "2026-10-15T13:00:00.000Z"
+      "published": "2026-10-15T19:00:00.000Z"
     },
     {
-      "title": "Anthropic opens Singapore office and signs MOU with the Government of Singapore",
-      "url": "https://www.anthropic.com/news/singapore-office-opening",
+      "title": "Accelerating the search for antimicrobial peptides with Google Antigravity",
+      "url": "https://deepmind.google/blog/accelerating-antimicrobial-discovery/",
+      "source": "Google DeepMind",
+      "published": "2026-10-15T16:08:03.000Z"
+    },
+    {
+      "title": "An update on independent evaluators",
+      "url": "https://www.anthropic.com/news/an-update-on-independent-evaluators",
       "source": "Anthropic",
-      "published": "2026-10-14T00:00:00.000Z"
+      "published": "2026-10-15T00:00:00.000Z"
     },
     {
-      "title": "Preparing for the 2026 US midterms",
-      "url": "https://www.anthropic.com/news/2026-us-midterms",
-      "source": "Anthropic",
-      "published": "2026-10-14T00:00:00.000Z"
-    },
-    {
-      "title": "How Windows is being optimized for Nvidia’s RTX Spark laptops",
-      "url": "https://www.theverge.com/tech/1011996/microsoft-windows-rtx-spark-platform-changes-notepad",
+      "title": "Meta’s new terms may allow it to train AI on news sites for free",
+      "url": "https://www.theverge.com/tech/1012846/meta-business-terms-scrape-news-publishers",
       "source": "The Verge",
-      "published": "2026-10-15T14:30:00.000Z"
+      "published": "2026-10-16T14:02:40.000Z"
     },
     {
-      "title": "Google’s Universal Cart shopping tool launches in the US",
-      "url": "https://techcrunch.com/2026/10/15/googles-universal-cart-shopping-tool-launches-in-the-us/",
+      "title": "Super Scam Me documentary shows what it takes to catch a romance scammer",
+      "url": "https://arstechnica.com/tech-policy/2026/10/romance-scam-doc-super-scam-me-takes-viewers-deep-into-love-bombing-terrain/",
+      "source": "Ars Technica",
+      "published": "2026-10-16T14:00:59.000Z"
+    },
+    {
+      "title": "Veritas expands its anti-counterfeit chip to jewelry, trophies, and fragrance bottles",
+      "url": "https://techcrunch.com/2026/10/16/veritas-is-building-a-chip-to-verify-luxury-goods/",
       "source": "TechCrunch",
-      "published": "2026-10-15T14:29:33.000Z"
+      "published": "2026-10-16T14:00:00.000Z"
     },
     {
-      "title": "Nobody is safe from celebrity AI deepfakes",
-      "url": "https://www.theverge.com/report/1011927/instagram-celebrity-ai-slop-likeness-taylor-swift-mia-goth",
-      "source": "The Verge",
-      "published": "2026-10-15T14:03:42.000Z"
-    },
-    {
-      "title": "Benn Jordan on Flock, privacy, and the new surveillance backlash",
-      "url": "https://www.theverge.com/podcast/1011170/benn-jordan-flock-cameras-alpr-ai-surveillance-privacy",
-      "source": "The Verge",
-      "published": "2026-10-15T14:00:00.000Z"
-    },
-    {
-      "title": "TechCrunch Disrupt 2026: Last day",
-      "url": "https://techcrunch.com/2026/10/15/techcrunch-disrupt-2026-last-day/",
+      "title": "Replit’s CEO says the future of work is the ‘self-driving company’",
+      "url": "https://techcrunch.com/2026/10/16/replits-ceo-says-the-future-of-work-is-the-self-driving-company/",
       "source": "TechCrunch",
-      "published": "2026-10-15T14:00:00.000Z"
+      "published": "2026-10-16T12:55:09.000Z"
     },
     {
-      "title": "Google launches its ‘universal’ online shopping cart ahead of the holidays",
-      "url": "https://www.theverge.com/tech/1011797/google-ai-universal-cart-shopping-tool-launch",
-      "source": "The Verge",
-      "published": "2026-10-15T13:00:00.000Z"
-    },
-    {
-      "title": "Amazon’s always-listening Bee wearable can now help you buy stuff",
-      "url": "https://www.theverge.com/tech/1011475/amazon-bee-frontier-eclipse-price-specs",
-      "source": "The Verge",
-      "published": "2026-10-15T12:00:00.000Z"
-    },
-    {
-      "title": "Amazon’s Bee launches two new personal AI devices, starting at $75",
-      "url": "https://techcrunch.com/2026/10/15/amazons-bee-launches-two-new-personal-ai-devices-starting-at-75/",
-      "source": "TechCrunch",
-      "published": "2026-10-15T12:00:00.000Z"
-    },
-    {
-      "title": "Apertus 1.5 Release Notes",
-      "url": "https://huggingface.co/blog/swiss-ai/apertus-v15-release-notes",
+      "title": "Scaling Indic Pretraining: 2.8 Trillion Tokens and an Open Data Generation Pipeline",
+      "url": "https://huggingface.co/blog/nvidia/scaling-indic-pretraining",
       "source": "Hugging Face",
-      "published": "2026-10-15T09:08:45.000Z"
+      "published": "2026-10-16T01:44:47.000Z"
     },
     {
-      "title": "Figma announces new features to define how agents work on its platform",
-      "url": "https://techcrunch.com/2026/10/14/figma-announces-new-features-to-define-how-agents-work-on-its-platform/",
-      "source": "TechCrunch",
-      "published": "2026-10-15T04:30:00.000Z"
-    },
-    {
-      "title": "Ricursive Intelligence is betting on AI-designed chips to help solve the compute crisis",
-      "url": "https://techcrunch.com/2026/10/14/ricursive-intelligence-is-betting-on-ai-designed-chips-to-help-solve-the-compute-crisis/",
-      "source": "TechCrunch",
-      "published": "2026-10-15T01:01:32.000Z"
-    },
-    {
-      "title": "Epic says its new vibe-coded Epic Games Launcher is faster than Steam",
-      "url": "https://arstechnica.com/gaming/2026/10/programming-is-hard-epic-games-leans-on-vibe-coding-for-its-new-launcher-app/",
-      "source": "Ars Technica",
-      "published": "2026-10-14T21:15:56.000Z"
-    },
-    {
-      "title": "Researchers use AI to design proteins that cut up other proteins",
-      "url": "https://arstechnica.com/science/2026/10/researchers-use-ai-to-design-proteins-that-cut-up-other-proteins/",
-      "source": "Ars Technica",
-      "published": "2026-10-14T17:10:15.000Z"
-    },
-    {
-      "title": "Recording device hidden in toilet paper found in top-secret OpenAI meeting room",
-      "url": "https://arstechnica.com/tech-policy/2026/10/fbi-arrests-openai-engineer-suspected-of-planting-bug-in-conference-room/",
-      "source": "Ars Technica",
-      "published": "2026-10-14T16:41:49.000Z"
-    },
-    {
-      "title": "HiRO-ACEv2: Simulating extreme weather at 3 km resolution for a fraction of the cost",
-      "url": "https://huggingface.co/blog/allenai/hiro-acev2",
+      "title": "Welcome Beam: a 501B open model you can own, customize, and scale",
+      "url": "https://huggingface.co/blog/reflection-beam",
       "source": "Hugging Face",
-      "published": "2026-10-14T16:12:42.000Z"
+      "published": "2026-10-16T00:00:00.000Z"
+    },
+    {
+      "title": "When it came to Cal AI’s viral success, a small army of influencers paid off",
+      "url": "https://techcrunch.com/2026/10/15/when-it-came-to-cal-ais-viral-success-a-small-army-of-influencers-paid-off/",
+      "source": "TechCrunch",
+      "published": "2026-10-15T23:44:56.000Z"
+    },
+    {
+      "title": "ChatGPT can peek at your Chrome tabs now",
+      "url": "https://www.theverge.com/ai-artificial-intelligence/1012510/openai-chatgpt-google-chrome-tabs",
+      "source": "The Verge",
+      "published": "2026-10-15T22:43:23.000Z"
+    },
+    {
+      "title": "Sega pulls Total War: Shogun 2 remaster from sale following disastrous launch",
+      "url": "https://www.theverge.com/games/1012512/sega-total-war-shogun-2-remaster-pulled",
+      "source": "The Verge",
+      "published": "2026-10-15T22:35:55.000Z"
+    },
+    {
+      "title": "The tech backlash is now in theaters",
+      "url": "https://www.theverge.com/entertainment/1012438/hollywood-tech-backlash-you-can-see-everything-musk-the-social-reckoning-artificial",
+      "source": "The Verge",
+      "published": "2026-10-15T21:39:52.000Z"
+    },
+    {
+      "title": "Trump posts AI-edited photo to brag about White House restoration work",
+      "url": "https://www.theverge.com/policy/1012445/donald-trump-ai-photo-white-house-rennovation-column",
+      "source": "The Verge",
+      "published": "2026-10-15T21:09:33.000Z"
+    },
+    {
+      "title": "Granite Switch 4.1: Chat, Decisions, and Speech from One Endpoint",
+      "url": "https://huggingface.co/blog/ibm-granite/granite-switch-4-1",
+      "source": "Hugging Face",
+      "published": "2026-10-15T20:34:01.000Z"
+    },
+    {
+      "title": "Meta launches an open-weight AI model that runs on Macs",
+      "url": "https://techcrunch.com/2026/10/15/meta-launches-an-open-weight-model-that-runs-on-macs/",
+      "source": "TechCrunch",
+      "published": "2026-10-15T20:04:53.000Z"
+    },
+    {
+      "title": "Amazon devices chief Panos Panay sees a future where AI devices replace the need to use apps",
+      "url": "https://techcrunch.com/2026/10/15/amazon-devices-chief-panos-panay-sees-a-future-where-ai-devices-replace-the-need-to-use-apps/",
+      "source": "TechCrunch",
+      "published": "2026-10-15T19:55:25.000Z"
+    },
+    {
+      "title": "Report: FTC probes Anthropic, OpenAI after Trump dismissed AI fears as “hoax”",
+      "url": "https://arstechnica.com/tech-policy/2026/10/ftc-probes-if-openai-anthropic-security-incidents-harmed-americans-report-says/",
+      "source": "Ars Technica",
+      "published": "2026-10-15T15:43:24.000Z"
+    },
+    {
+      "title": "Singer or clanker? YouTube Music will tell you with new gen AI labeling.",
+      "url": "https://arstechnica.com/ai/2026/10/youtube-music-begins-labeling-ai-songs/",
+      "source": "Ars Technica",
+      "published": "2026-10-15T15:12:58.000Z"
     }
   ]
 }
