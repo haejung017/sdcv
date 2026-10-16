@@ -76,7 +76,7 @@ Libriso uses it, which credits its 12:34 commit on Oct 13. **Keep a SHA baseline
 - **Triggers:** `schedule` at 10:00 UTC daily (about 6 AM ET), plus `workflow_dispatch`.
 - **Read access:**
   - One read-only **deploy key** per private repo.
-  - The matching private keys are stored as repo secrets: `KEY_LIBRISO`, `KEY_REPORTGEN`, `KEY_THECLIMB`, `KEY_POCRD`.
+  - The matching private keys are stored as repo secrets: `KEY_LIBRISO`, `KEY_REPORTGEN`, `KEY_THECLIMB`, `KEY_POCRD`, plus `KEY_VELA` (added 2026-10-16 with `"baseline": null`).
   - Each key can read only its own repo and can't write anywhere.
 - **Steps:**
   1. Clone each repo over SSH with full history.

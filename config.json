@@ -6,7 +6,8 @@
     { "name": "Libriso",   "repo": "haejung017/Libriso",   "baseline": null, "exclude": [] },
     { "name": "ReportGen", "repo": "haejung017/ReportGen", "baseline": "9edc44b384bbecbe57e47b16fd34cb724f1ed938", "exclude": ["www/userguide_v1.0.html", "www/quarto-skinny-extracted.css"] },
     { "name": "TheClimb",  "repo": "haejung017/TheClimb",  "baseline": "de2997c786a821325544b79215f1cbe5668ba8c6", "exclude": [] },
-    { "name": "POCRD",     "repo": "haejung017/POCRD",     "baseline": "89d452cf3a0e158388d5de6d75e56c016cb6257d", "exclude": [] }
+    { "name": "POCRD",     "repo": "haejung017/POCRD",     "baseline": "89d452cf3a0e158388d5de6d75e56c016cb6257d", "exclude": [] },
+    { "name": "Vela",      "repo": "haejung017/Vela",      "baseline": null, "exclude": [] }
   ],
   "news": {
     "limit": 20,
