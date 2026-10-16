@@ -1,23 +1,65 @@
 {
-  "updated_at": "2026-10-16T14:43:02.301Z",
+  "updated_at": "2026-10-16T20:07:44.044Z",
   "items": [
     {
-      "title": "Bringing GPT-Rosalind to academic research labs",
-      "url": "https://openai.com/index/introducing-the-rosalind-academic-plan",
+      "title": "Stack Overflow for Agents triples signups with ChatGPT plugin",
+      "url": "https://openai.com/index/stack-overflow-chatgpt-plugin",
       "source": "OpenAI",
-      "published": "2026-10-15T19:00:00.000Z"
-    },
-    {
-      "title": "Accelerating the search for antimicrobial peptides with Google Antigravity",
-      "url": "https://deepmind.google/blog/accelerating-antimicrobial-discovery/",
-      "source": "Google DeepMind",
-      "published": "2026-10-15T16:08:03.000Z"
+      "published": "2026-10-16T00:00:00.000Z"
     },
     {
       "title": "An update on independent evaluators",
       "url": "https://www.anthropic.com/news/an-update-on-independent-evaluators",
       "source": "Anthropic",
       "published": "2026-10-15T00:00:00.000Z"
+    },
+    {
+      "title": "Roundtables: A Conversation With the Creator of AI-Designed Viruses",
+      "url": "https://www.technologyreview.com/2026/10/16/1146224/roundtables-a-conversation-with-the-creator-of-ai-designed-viruses/",
+      "source": "MIT Technology Review",
+      "published": "2026-10-16T18:00:00.000Z"
+    },
+    {
+      "title": "India becomes the latest country to report rogue AI agent activity",
+      "url": "https://techcrunch.com/2026/10/16/india-becomes-the-latest-country-to-report-rogue-ai-agent-activity/",
+      "source": "TechCrunch",
+      "published": "2026-10-16T17:52:24.000Z"
+    },
+    {
+      "title": "An Nvidia insider-turned-VC on why robotics hasn’t hit its ChatGPT moment, yet",
+      "url": "https://techcrunch.com/video/a-nvidia-insider-turned-vc-on-why-robotics-hasnt-hit-its-chatgpt-moment-yet/",
+      "source": "TechCrunch",
+      "published": "2026-10-16T16:30:00.000Z"
+    },
+    {
+      "title": "Physical AI is more than robots, says the Nvidia veteran now investing in it",
+      "url": "https://techcrunch.com/podcast/physical-ai-is-more-than-robots-says-the-nvidia-veteran-now-investing-in-it/",
+      "source": "TechCrunch",
+      "published": "2026-10-16T16:30:00.000Z"
+    },
+    {
+      "title": "Elorian’s first AI model wants to reason with images, not just about them",
+      "url": "https://techcrunch.com/2026/10/16/elorians-first-ai-model-wants-to-reason-with-images-not-just-about-them/",
+      "source": "TechCrunch",
+      "published": "2026-10-16T16:01:37.000Z"
+    },
+    {
+      "title": "Meta may use sweeping new commercial TOS to avoid millions in AI licensing fees",
+      "url": "https://arstechnica.com/tech-policy/2026/10/meta-may-use-sweeping-new-commercial-tos-to-avoid-millions-in-ai-licensing-fees/",
+      "source": "Ars Technica",
+      "published": "2026-10-16T15:41:00.000Z"
+    },
+    {
+      "title": "Jev is Vercel’s fastest-adopted AI model ever",
+      "url": "https://techcrunch.com/2026/10/16/jev-is-vercels-fastest-adopted-ai-model-ever/",
+      "source": "TechCrunch",
+      "published": "2026-10-16T15:33:49.000Z"
+    },
+    {
+      "title": "A week with RTX Spark: everything we’ve learned using Nvidia’s new laptops",
+      "url": "https://www.theverge.com/tech/1012748/nvidia-rtx-spark-windows-arm-laptops-asus-hp-lenovo-impressions",
+      "source": "The Verge",
+      "published": "2026-10-16T15:00:00.000Z"
     },
     {
       "title": "Meta’s new terms may allow it to train AI on news sites for free",
@@ -32,18 +74,6 @@
       "published": "2026-10-16T14:00:59.000Z"
     },
     {
-      "title": "Veritas expands its anti-counterfeit chip to jewelry, trophies, and fragrance bottles",
-      "url": "https://techcrunch.com/2026/10/16/veritas-is-building-a-chip-to-verify-luxury-goods/",
-      "source": "TechCrunch",
-      "published": "2026-10-16T14:00:00.000Z"
-    },
-    {
-      "title": "Replit’s CEO says the future of work is the ‘self-driving company’",
-      "url": "https://techcrunch.com/2026/10/16/replits-ceo-says-the-future-of-work-is-the-self-driving-company/",
-      "source": "TechCrunch",
-      "published": "2026-10-16T12:55:09.000Z"
-    },
-    {
       "title": "Scaling Indic Pretraining: 2.8 Trillion Tokens and an Open Data Generation Pipeline",
       "url": "https://huggingface.co/blog/nvidia/scaling-indic-pretraining",
       "source": "Hugging Face",
@@ -54,12 +84,6 @@
       "url": "https://huggingface.co/blog/reflection-beam",
       "source": "Hugging Face",
       "published": "2026-10-16T00:00:00.000Z"
-    },
-    {
-      "title": "When it came to Cal AI’s viral success, a small army of influencers paid off",
-      "url": "https://techcrunch.com/2026/10/15/when-it-came-to-cal-ais-viral-success-a-small-army-of-influencers-paid-off/",
-      "source": "TechCrunch",
-      "published": "2026-10-15T23:44:56.000Z"
     },
     {
       "title": "ChatGPT can peek at your Chrome tabs now",
@@ -80,40 +104,10 @@
       "published": "2026-10-15T21:39:52.000Z"
     },
     {
-      "title": "Trump posts AI-edited photo to brag about White House restoration work",
-      "url": "https://www.theverge.com/policy/1012445/donald-trump-ai-photo-white-house-rennovation-column",
-      "source": "The Verge",
-      "published": "2026-10-15T21:09:33.000Z"
-    },
-    {
       "title": "Granite Switch 4.1: Chat, Decisions, and Speech from One Endpoint",
       "url": "https://huggingface.co/blog/ibm-granite/granite-switch-4-1",
       "source": "Hugging Face",
       "published": "2026-10-15T20:34:01.000Z"
-    },
-    {
-      "title": "Meta launches an open-weight AI model that runs on Macs",
-      "url": "https://techcrunch.com/2026/10/15/meta-launches-an-open-weight-model-that-runs-on-macs/",
-      "source": "TechCrunch",
-      "published": "2026-10-15T20:04:53.000Z"
-    },
-    {
-      "title": "Amazon devices chief Panos Panay sees a future where AI devices replace the need to use apps",
-      "url": "https://techcrunch.com/2026/10/15/amazon-devices-chief-panos-panay-sees-a-future-where-ai-devices-replace-the-need-to-use-apps/",
-      "source": "TechCrunch",
-      "published": "2026-10-15T19:55:25.000Z"
-    },
-    {
-      "title": "Report: FTC probes Anthropic, OpenAI after Trump dismissed AI fears as “hoax”",
-      "url": "https://arstechnica.com/tech-policy/2026/10/ftc-probes-if-openai-anthropic-security-incidents-harmed-americans-report-says/",
-      "source": "Ars Technica",
-      "published": "2026-10-15T15:43:24.000Z"
-    },
-    {
-      "title": "Singer or clanker? YouTube Music will tell you with new gen AI labeling.",
-      "url": "https://arstechnica.com/ai/2026/10/youtube-music-begins-labeling-ai-songs/",
-      "source": "Ars Technica",
-      "published": "2026-10-15T15:12:58.000Z"
     }
   ]
 }
