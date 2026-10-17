@@ -1,17 +1,35 @@
 {
-  "updated_at": "2026-10-16T20:07:44.044Z",
+  "updated_at": "2026-10-17T13:34:24.212Z",
   "items": [
     {
-      "title": "Stack Overflow for Agents triples signups with ChatGPT plugin",
-      "url": "https://openai.com/index/stack-overflow-chatgpt-plugin",
+      "title": "How Itaú is building generative AI for its entire customer base",
+      "url": "https://openai.com/index/itau-generative-ai",
       "source": "OpenAI",
-      "published": "2026-10-16T00:00:00.000Z"
+      "published": "2026-10-16T19:00:00.000Z"
     },
     {
-      "title": "An update on independent evaluators",
-      "url": "https://www.anthropic.com/news/an-update-on-independent-evaluators",
-      "source": "Anthropic",
-      "published": "2026-10-15T00:00:00.000Z"
+      "title": "Websites are closing their doors to AI agents",
+      "url": "https://www.theverge.com/ai-artificial-intelligence/1013195/ai-agents-blocked-web",
+      "source": "The Verge",
+      "published": "2026-10-17T13:00:00.000Z"
+    },
+    {
+      "title": "Replit is no longer working with Anthropic, CEO says",
+      "url": "https://techcrunch.com/2026/10/16/replit-is-no-longer-working-with-anthropic-ceo-says/",
+      "source": "TechCrunch",
+      "published": "2026-10-16T21:22:28.000Z"
+    },
+    {
+      "title": "OpenAI models hacked a crypto wallet and breached more websites",
+      "url": "https://arstechnica.com/security/2026/10/openai-models-hacked-a-crypto-wallet-and-breached-more-websites/",
+      "source": "Ars Technica",
+      "published": "2026-10-16T20:59:01.000Z"
+    },
+    {
+      "title": "“thegentlemanpervert” producing AI CSAM is a NJ prosecutor, say cops",
+      "url": "https://arstechnica.com/tech-policy/2026/10/thegentlemanpervert-producing-ai-csam-is-a-nj-prosecutor-say-cops/",
+      "source": "Ars Technica",
+      "published": "2026-10-16T20:20:07.000Z"
     },
     {
       "title": "Roundtables: A Conversation With the Creator of AI-Designed Viruses",
@@ -50,12 +68,6 @@
       "published": "2026-10-16T15:41:00.000Z"
     },
     {
-      "title": "Jev is Vercel’s fastest-adopted AI model ever",
-      "url": "https://techcrunch.com/2026/10/16/jev-is-vercels-fastest-adopted-ai-model-ever/",
-      "source": "TechCrunch",
-      "published": "2026-10-16T15:33:49.000Z"
-    },
-    {
       "title": "A week with RTX Spark: everything we’ve learned using Nvidia’s new laptops",
       "url": "https://www.theverge.com/tech/1012748/nvidia-rtx-spark-windows-arm-laptops-asus-hp-lenovo-impressions",
       "source": "The Verge",
@@ -72,42 +84,6 @@
       "url": "https://arstechnica.com/tech-policy/2026/10/romance-scam-doc-super-scam-me-takes-viewers-deep-into-love-bombing-terrain/",
       "source": "Ars Technica",
       "published": "2026-10-16T14:00:59.000Z"
-    },
-    {
-      "title": "Scaling Indic Pretraining: 2.8 Trillion Tokens and an Open Data Generation Pipeline",
-      "url": "https://huggingface.co/blog/nvidia/scaling-indic-pretraining",
-      "source": "Hugging Face",
-      "published": "2026-10-16T01:44:47.000Z"
-    },
-    {
-      "title": "Welcome Beam: a 501B open model you can own, customize, and scale",
-      "url": "https://huggingface.co/blog/reflection-beam",
-      "source": "Hugging Face",
-      "published": "2026-10-16T00:00:00.000Z"
-    },
-    {
-      "title": "ChatGPT can peek at your Chrome tabs now",
-      "url": "https://www.theverge.com/ai-artificial-intelligence/1012510/openai-chatgpt-google-chrome-tabs",
-      "source": "The Verge",
-      "published": "2026-10-15T22:43:23.000Z"
-    },
-    {
-      "title": "Sega pulls Total War: Shogun 2 remaster from sale following disastrous launch",
-      "url": "https://www.theverge.com/games/1012512/sega-total-war-shogun-2-remaster-pulled",
-      "source": "The Verge",
-      "published": "2026-10-15T22:35:55.000Z"
-    },
-    {
-      "title": "The tech backlash is now in theaters",
-      "url": "https://www.theverge.com/entertainment/1012438/hollywood-tech-backlash-you-can-see-everything-musk-the-social-reckoning-artificial",
-      "source": "The Verge",
-      "published": "2026-10-15T21:39:52.000Z"
-    },
-    {
-      "title": "Granite Switch 4.1: Chat, Decisions, and Speech from One Endpoint",
-      "url": "https://huggingface.co/blog/ibm-granite/granite-switch-4-1",
-      "source": "Hugging Face",
-      "published": "2026-10-15T20:34:01.000Z"
     }
   ]
 }
