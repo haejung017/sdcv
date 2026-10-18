@@ -1,89 +1,35 @@
 {
-  "updated_at": "2026-10-17T13:34:24.212Z",
+  "updated_at": "2026-10-18T00:51:06.230Z",
   "items": [
     {
-      "title": "How Itaú is building generative AI for its entire customer base",
-      "url": "https://openai.com/index/itau-generative-ai",
-      "source": "OpenAI",
-      "published": "2026-10-16T19:00:00.000Z"
+      "title": "Meta removes language that raised scraping and AI training concerns",
+      "url": "https://techcrunch.com/2026/10/17/meta-removes-language-that-raised-scraping-and-ai-training-concerns/",
+      "source": "TechCrunch",
+      "published": "2026-10-17T21:31:32.000Z"
+    },
+    {
+      "title": "Anthropic says its workforce has become less junior and is spending more time in meetings",
+      "url": "https://techcrunch.com/2026/10/17/anthropic-says-its-workforce-has-become-less-junior-and-is-spending-more-time-in-meetings/",
+      "source": "TechCrunch",
+      "published": "2026-10-17T20:21:19.000Z"
+    },
+    {
+      "title": "Replit makes OpenAI its default over Anthropic, CEO says",
+      "url": "https://techcrunch.com/2026/10/17/replit-is-no-longer-working-with-anthropic-ceo-says/",
+      "source": "TechCrunch",
+      "published": "2026-10-17T18:48:08.000Z"
+    },
+    {
+      "title": "Meta removes language that may have allowed it to scrape news sites",
+      "url": "https://www.theverge.com/tech/1013409/meta-removes-language-that-may-have-allowed-it-to-scrape-news-sites",
+      "source": "The Verge",
+      "published": "2026-10-17T15:04:36.000Z"
     },
     {
       "title": "Websites are closing their doors to AI agents",
       "url": "https://www.theverge.com/ai-artificial-intelligence/1013195/ai-agents-blocked-web",
       "source": "The Verge",
       "published": "2026-10-17T13:00:00.000Z"
-    },
-    {
-      "title": "Replit is no longer working with Anthropic, CEO says",
-      "url": "https://techcrunch.com/2026/10/16/replit-is-no-longer-working-with-anthropic-ceo-says/",
-      "source": "TechCrunch",
-      "published": "2026-10-16T21:22:28.000Z"
-    },
-    {
-      "title": "OpenAI models hacked a crypto wallet and breached more websites",
-      "url": "https://arstechnica.com/security/2026/10/openai-models-hacked-a-crypto-wallet-and-breached-more-websites/",
-      "source": "Ars Technica",
-      "published": "2026-10-16T20:59:01.000Z"
-    },
-    {
-      "title": "“thegentlemanpervert” producing AI CSAM is a NJ prosecutor, say cops",
-      "url": "https://arstechnica.com/tech-policy/2026/10/thegentlemanpervert-producing-ai-csam-is-a-nj-prosecutor-say-cops/",
-      "source": "Ars Technica",
-      "published": "2026-10-16T20:20:07.000Z"
-    },
-    {
-      "title": "Roundtables: A Conversation With the Creator of AI-Designed Viruses",
-      "url": "https://www.technologyreview.com/2026/10/16/1146224/roundtables-a-conversation-with-the-creator-of-ai-designed-viruses/",
-      "source": "MIT Technology Review",
-      "published": "2026-10-16T18:00:00.000Z"
-    },
-    {
-      "title": "India becomes the latest country to report rogue AI agent activity",
-      "url": "https://techcrunch.com/2026/10/16/india-becomes-the-latest-country-to-report-rogue-ai-agent-activity/",
-      "source": "TechCrunch",
-      "published": "2026-10-16T17:52:24.000Z"
-    },
-    {
-      "title": "An Nvidia insider-turned-VC on why robotics hasn’t hit its ChatGPT moment, yet",
-      "url": "https://techcrunch.com/video/a-nvidia-insider-turned-vc-on-why-robotics-hasnt-hit-its-chatgpt-moment-yet/",
-      "source": "TechCrunch",
-      "published": "2026-10-16T16:30:00.000Z"
-    },
-    {
-      "title": "Physical AI is more than robots, says the Nvidia veteran now investing in it",
-      "url": "https://techcrunch.com/podcast/physical-ai-is-more-than-robots-says-the-nvidia-veteran-now-investing-in-it/",
-      "source": "TechCrunch",
-      "published": "2026-10-16T16:30:00.000Z"
-    },
-    {
-      "title": "Elorian’s first AI model wants to reason with images, not just about them",
-      "url": "https://techcrunch.com/2026/10/16/elorians-first-ai-model-wants-to-reason-with-images-not-just-about-them/",
-      "source": "TechCrunch",
-      "published": "2026-10-16T16:01:37.000Z"
-    },
-    {
-      "title": "Meta may use sweeping new commercial TOS to avoid millions in AI licensing fees",
-      "url": "https://arstechnica.com/tech-policy/2026/10/meta-may-use-sweeping-new-commercial-tos-to-avoid-millions-in-ai-licensing-fees/",
-      "source": "Ars Technica",
-      "published": "2026-10-16T15:41:00.000Z"
-    },
-    {
-      "title": "A week with RTX Spark: everything we’ve learned using Nvidia’s new laptops",
-      "url": "https://www.theverge.com/tech/1012748/nvidia-rtx-spark-windows-arm-laptops-asus-hp-lenovo-impressions",
-      "source": "The Verge",
-      "published": "2026-10-16T15:00:00.000Z"
-    },
-    {
-      "title": "Meta’s new terms may allow it to train AI on news sites for free",
-      "url": "https://www.theverge.com/tech/1012846/meta-business-terms-scrape-news-publishers",
-      "source": "The Verge",
-      "published": "2026-10-16T14:02:40.000Z"
-    },
-    {
-      "title": "Super Scam Me documentary shows what it takes to catch a romance scammer",
-      "url": "https://arstechnica.com/tech-policy/2026/10/romance-scam-doc-super-scam-me-takes-viewers-deep-into-love-bombing-terrain/",
-      "source": "Ars Technica",
-      "published": "2026-10-16T14:00:59.000Z"
     }
   ]
 }
