@@ -1,6 +1,6 @@
 import { test } from 'node:test';
 import assert from 'node:assert/strict';
-import { dateInZone, dayNumber, chargeCount, withTax, niceCeil, formatMoney, formatInt, formatShortDate, formatElapsed, formatAgo } from '../calc.mjs';
+import { dateInZone, dayNumber, chargeCount, withTax, niceCeil, formatMoney, formatInt, formatShortDate, formatElapsed, formatAgo, formatPlan } from '../calc.mjs';
 
 test('formatAgo: minutes, hours, then the date; date-only timestamps show the date', () => {
   const now = Date.parse('2026-10-14T10:00:00Z');
@@ -25,6 +25,14 @@ test('withTax adds tax per charge, rounded to cents, times the count', () => {
   assert.equal(withTax(28, undefined), 28);
   assert.equal(withTax(28, 0.13, 3), 94.92);
   assert.equal(withTax(28, 0.13, 0), 0);
+});
+
+test('formatPlan shows the price per charge, with tax added or included', () => {
+  const pro = { plan: 'Claude Pro', amount: 28, tax_rate: 0.13, tax_label: 'HST', currency: 'CAD', charge_day: 18 };
+  assert.equal(formatPlan(pro, 0), 'Claude Pro · $28 CAD + 13% HST = $31.64 CAD on the 18th · 0 charges');
+  const max = { plan: 'Claude Max', amount: 203, tax_included: true, tax_label: 'HST', currency: 'CAD', charge_day: 17 };
+  assert.equal(formatPlan(max, 1), 'Claude Max · $203 CAD incl. HST on the 17th · 1 charge');
+  assert.equal(formatPlan({ ...max, tax_included: false }, 2), 'Claude Max · $203 CAD on the 17th · 2 charges');
 });
 
 test('dayNumber: start day is Day 1', () => {

@@ -1,6 +1,6 @@
 {
   "sdcv_start": "2026-10-13T10:30:00-04:00",
-  "subscription": { "plan": "Claude Pro", "amount": 28, "tax_rate": 0.13, "tax_label": "HST", "currency": "CAD", "charge_day": 18, "first_charge": "2026-10-18" },
+  "subscription": { "plan": "Claude Max", "amount": 203, "tax_included": true, "tax_label": "HST", "currency": "CAD", "charge_day": 17, "first_charge": "2026-10-17" },
   "value_generated": { "amount": 0, "currency": "CAD" },
   "projects": [
     { "name": "Libriso",   "repo": "haejung017/Libriso",   "baseline": null, "exclude": [] },

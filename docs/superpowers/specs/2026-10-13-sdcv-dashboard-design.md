@@ -6,7 +6,9 @@ Date: 2026-10-13. Status: approved by Jay.
 
 A public page that tracks the SDCV journey (Stop Doomscrolling, Create Value). The start point is 2026-10-13 10:30 ET. It shows three numbers and nothing else:
 
-1. **Subscription spent.** Claude Pro, 28 CAD + 13% HST (31.64 CAD), charged on the 18th of each month. The first counted charge is 2026-10-18.
+1. **Subscription spent.** Claude Max, 203 CAD a month with HST included, charged on the 17th. The first charge was 2026-10-17.
+   - Jay upgraded from Claude Pro (28 CAD + 13% HST, due on the 18th) on 2026-10-17, before Pro's first counted charge. No Pro charge counts.
+   - In `config.json`, `"tax_included": true` marks a tax-inclusive amount. A plan priced before tax uses `"tax_rate"` instead.
 2. **Value generated.** CAD 0 until there is real profit. Jay sets it by hand.
 3. **Lines of code**, from Jay's GitHub repos:
    - **Headline:** lines written since SDCV.
@@ -112,7 +114,7 @@ Libriso uses it, which credits its 12:34 commit on Oct 13. **Keep a SHA baseline
 3. **One line chart:** cumulative lines written since SDCV, by day, drawn as inline SVG with no chart library.
 4. **Three cards:**
    - **Lines written since SDCV:** the big number, with codebase size beneath it.
-   - **Subscription spent:** calculated in the browser from `config.json`, as 31.64 (28 + 13% HST, rounded to the cent) × the number of charge dates from `first_charge` up to today. It stays correct even if the robot stops.
+   - **Subscription spent:** calculated in the browser from `config.json`, as the price per charge × the number of charge dates from `first_charge` up to today. The price per charge is `amount`, plus `tax_rate` if set, rounded to the cent. It stays correct even if the robot stops.
    - **Value generated:** taken from `config.json`.
 5. **AI news** (added 2026-10-13, see below).
 6. **Footer:** "Last updated …" and a one-line note on what counts.

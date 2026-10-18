@@ -198,7 +198,7 @@
 </main>
 
 <script type="module">
-  import { dateInZone, dayNumber, chargeCount, withTax, niceCeil, formatMoney, formatInt, formatShortDate, formatElapsed, formatAgo } from './calc.mjs';
+  import { dateInZone, dayNumber, chargeCount, withTax, niceCeil, formatMoney, formatInt, formatShortDate, formatElapsed, formatAgo, formatPlan } from './calc.mjs';
 
   const $ = (id) => document.getElementById(id);
   const esc = (s) => String(s).replace(/[&<>"]/g, (c) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c]));
@@ -321,9 +321,8 @@
 
     const sub = config.subscription;
     const charges = chargeCount(sub.first_charge, sub.charge_day, today);
-    const tax = sub.tax_rate ? ` + ${+(sub.tax_rate * 100).toFixed(3)}% ${sub.tax_label ?? 'tax'}` : '';
     $('spent').textContent = formatMoney(withTax(sub.amount, sub.tax_rate, charges), sub.currency);
-    $('plan').textContent = `${sub.plan} · ${formatMoney(sub.amount, sub.currency)}${tax} = ${formatMoney(withTax(sub.amount, sub.tax_rate), sub.currency)} on the ${sub.charge_day}th · ${charges} ${charges === 1 ? 'charge' : 'charges'}`;
+    $('plan').textContent = formatPlan(sub, charges);
     $('value').textContent = formatMoney(config.value_generated.amount, config.value_generated.currency);
 
     $('projects').innerHTML = [...stats.projects]

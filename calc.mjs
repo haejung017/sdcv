@@ -32,6 +32,16 @@ export function withTax(amount, taxRate = 0, count = 1) {
   return (Math.round(amount * (1 + (taxRate ?? 0)) * 100) * count) / 100;
 }
 
+// "Claude Pro · $28 CAD + 13% HST = $31.64 CAD on the 18th · 2 charges". A plan with
+// "tax_included": true and no tax_rate shows its price as "$203 CAD incl. HST".
+export function formatPlan(sub, charges) {
+  const money = (n) => formatMoney(n, sub.currency);
+  const price = sub.tax_rate
+    ? `${money(sub.amount)} + ${+(sub.tax_rate * 100).toFixed(3)}% ${sub.tax_label ?? 'tax'} = ${money(withTax(sub.amount, sub.tax_rate))}`
+    : `${money(sub.amount)}${sub.tax_included ? ` incl. ${sub.tax_label ?? 'tax'}` : ''}`;
+  return `${sub.plan} · ${price} on the ${sub.charge_day}th · ${charges} ${charges === 1 ? 'charge' : 'charges'}`;
+}
+
 export function niceCeil(n) {
   if (n <= 0) return 10;
   const p = 10 ** Math.floor(Math.log10(n));
