@@ -1,125 +1,125 @@
 {
-  "updated_at": "2026-10-22T15:00:16.653Z",
+  "updated_at": "2026-10-23T14:51:39.572Z",
   "items": [
     {
-      "title": "Beyond tree cover: mapping the world’s forest types",
-      "url": "https://deepmind.google/blog/beyond-tree-cover-mapping-the-worlds-forest-types/",
-      "source": "Google DeepMind",
-      "published": "2026-10-22T14:30:24.000Z"
-    },
-    {
-      "title": "What FDE means at OpenAI",
-      "url": "https://openai.com/index/forward-deployed-engineering-means",
+      "title": "OpenAI and Poland’s NASK partner to advance AI safety and security",
+      "url": "https://openai.com/index/openai-nask-ai-safety-security-partnership",
       "source": "OpenAI",
-      "published": "2026-10-22T06:00:00.000Z"
+      "published": "2026-10-23T00:00:00.000Z"
     },
     {
-      "title": "Broad access through consistent standards",
-      "url": "https://openai.com/index/broad-access-through-consistent-standards",
+      "title": "Build more responsive apps with the Decisions API",
+      "url": "https://openai.com/index/decisions-api",
       "source": "OpenAI",
-      "published": "2026-10-21T21:00:00.000Z"
+      "published": "2026-10-22T19:00:00.000Z"
     },
     {
-      "title": "How AT&T is rethinking in-house legal work with OpenAI",
-      "url": "https://openai.com/index/att-legal",
-      "source": "OpenAI",
-      "published": "2026-10-21T17:00:00.000Z"
-    },
-    {
-      "title": "Physicist Christopher Stubbs joins Anthropic's Long-Term Benefit Trust",
-      "url": "https://www.anthropic.com/news/christopher-stubbs-joins-long-term-benefit-trust",
+      "title": "Open call for guest investigators in the life sciences",
+      "url": "https://www.anthropic.com/news/open-call-guest-investigators-life-sciences",
       "source": "Anthropic",
-      "published": "2026-10-21T00:00:00.000Z"
+      "published": "2026-10-22T00:00:00.000Z"
     },
     {
-      "title": "Bill Gates says to prepare for 20 years of ‘tumultuous’ AI disruption",
-      "url": "https://www.theverge.com/podcast/1015408/bill-gates-ai-interview-microsoft-openai-anthropic-risk-policy-regulation",
+      "title": "Donating Agent Skills to the Agentic AI Foundation",
+      "url": "https://www.anthropic.com/news/donating-agent-skills-to-the-agentic-ai-foundation",
+      "source": "Anthropic",
+      "published": "2026-10-22T00:00:00.000Z"
+    },
+    {
+      "title": "Retro gaming is being overrun with AI",
+      "url": "https://www.theverge.com/ai-artificial-intelligence/1015430/ai-retro-games-decomp-recomp-port",
       "source": "The Verge",
-      "published": "2026-10-22T14:00:00.000Z"
+      "published": "2026-10-23T12:00:00.000Z"
     },
     {
-      "title": "Claude Duet app is Anthropic’s bet on agents",
-      "url": "https://techcrunch.com/2026/10/22/claude-duet-app-is-anthropics-bet-on-agents/",
+      "title": "Uber rival inDrive eyes 2027 robotaxi tests in Central Asia with Pony.ai and Nvidia",
+      "url": "https://techcrunch.com/2026/10/22/uber-rival-indrive-eyes-2027-robotaxi-tests-in-central-asia-with-pony-ai-and-nvidia/",
       "source": "TechCrunch",
-      "published": "2026-10-22T13:53:26.000Z"
+      "published": "2026-10-23T04:00:00.000Z"
     },
     {
-      "title": "Nirva raises $33M for a pendant that only listens to you",
-      "url": "https://techcrunch.com/2026/10/22/nirva-raises-33m-for-a-pendant-that-only-listens-to-you/",
+      "title": "Left alone with nothing to do, AI agents started playing",
+      "url": "https://techcrunch.com/2026/10/22/left-alone-with-nothing-to-do-ai-agents-started-playing/",
       "source": "TechCrunch",
-      "published": "2026-10-22T13:26:52.000Z"
+      "published": "2026-10-23T00:45:37.000Z"
     },
     {
-      "title": "DeepSeek reportedly raises $15B days after US restrictions",
-      "url": "https://techcrunch.com/2026/10/22/deepseek-reportedly-raises-15b-days-after-us-restrictions/",
-      "source": "TechCrunch",
-      "published": "2026-10-22T13:11:13.000Z"
-    },
-    {
-      "title": "1Password lets AI agents use your passwords without seeing them",
-      "url": "https://www.theverge.com/ai-artificial-intelligence/1016399/1password-ai-agent-password-sign-in",
-      "source": "The Verge",
-      "published": "2026-10-22T13:00:00.000Z"
-    },
-    {
-      "title": "AI agents are ready to shop. Some retailers are wary.",
-      "url": "https://www.theverge.com/report/1015811/ai-shopping-agents-blocked-amazon-the-realreal-target-meta-muse",
-      "source": "The Verge",
-      "published": "2026-10-22T12:30:00.000Z"
-    },
-    {
-      "title": "Claude did not invent scorpion antivenom",
-      "url": "https://www.theverge.com/ai-artificial-intelligence/1016443/anthropic-claude-citrini-vibecoding-scorpion-antivenom",
-      "source": "The Verge",
-      "published": "2026-10-22T12:21:07.000Z"
-    },
-    {
-      "title": "Eiliko maker says it’s hiring an ‘independent security firm’ after Verge report on its insecure robots",
-      "url": "https://www.theverge.com/news/1015824/eiliko-energize-lab-statement-on-robot-hack-breach",
-      "source": "The Verge",
-      "published": "2026-10-22T11:00:00.000Z"
-    },
-    {
-      "title": "Making the case for context-aware AI",
-      "url": "https://www.technologyreview.com/2026/10/22/1146812/making-the-case-for-context-aware-ai/",
-      "source": "MIT Technology Review",
-      "published": "2026-10-22T10:00:00.000Z"
-    },
-    {
-      "title": "AI’s hidden storage bill: What inference leaves behind",
-      "url": "https://www.technologyreview.com/2026/10/22/1146948/ais-hidden-storage-bill-what-inference-leaves-behind/",
-      "source": "MIT Technology Review",
-      "published": "2026-10-22T08:41:18.000Z"
-    },
-    {
-      "title": "Ensemble forecasting with IBM Granite time-series models",
-      "url": "https://huggingface.co/blog/ibm-research/granite-timeseries-ensemble-r1",
+      "title": "Does Your Model Run on AWS Trainium? Look It Up",
+      "url": "https://huggingface.co/blog/torch-neuronx-model-support",
       "source": "Hugging Face",
-      "published": "2026-10-22T07:51:31.000Z"
+      "published": "2026-10-23T00:00:00.000Z"
     },
     {
-      "title": "Blackstone’s Jas Khaira says fears over AI-buildout debt are overblown",
-      "url": "https://techcrunch.com/2026/10/21/blackstones-jas-khaira-says-fears-over-ai-buildout-debt-are-overblown/",
+      "title": "Turning Database Grading into RL Rewards: Post-Training Agents with ThinkingBox",
+      "url": "https://huggingface.co/blog/microsoft/thinkingbox-training",
+      "source": "Hugging Face",
+      "published": "2026-10-22T22:24:34.000Z"
+    },
+    {
+      "title": "OpenAI working on new $30B raise at $1.25T valuation ahead of IPO",
+      "url": "https://techcrunch.com/2026/10/22/openai-working-on-new-30b-raise-at-1-25t-valuation-ahead-of-ipo/",
       "source": "TechCrunch",
-      "published": "2026-10-21T22:51:22.000Z"
+      "published": "2026-10-22T22:08:24.000Z"
     },
     {
-      "title": "TechCrunch Founder Summit 2026: Everything you need to know",
-      "url": "https://techcrunch.com/2026/10/21/techcrunch-founder-summit-2026-everything-you-need-to-know/",
+      "title": "Canva’s first AI image model plans designs before generating them",
+      "url": "https://www.theverge.com/ai-artificial-intelligence/1017151/canva-craft-in-house-ai-model",
+      "source": "The Verge",
+      "published": "2026-10-22T21:51:25.000Z"
+    },
+    {
+      "title": "Designing an AI serving harness built to last",
+      "url": "https://www.technologyreview.com/2026/10/22/1146109/designing-an-ai-serving-harness-built-to-last/",
+      "source": "MIT Technology Review",
+      "published": "2026-10-22T21:17:29.000Z"
+    },
+    {
+      "title": "Meta’s AI could still scrape news sites, legal experts say",
+      "url": "https://www.theverge.com/tech/1017082/meta-terms-update-ai-training-concerns",
+      "source": "The Verge",
+      "published": "2026-10-22T20:32:05.000Z"
+    },
+    {
+      "title": "Meta turns Muse sharing back on",
+      "url": "https://www.theverge.com/tech/1017066/meta-muse-sharing-back-on-artifiacts",
+      "source": "The Verge",
+      "published": "2026-10-22T20:24:04.000Z"
+    },
+    {
+      "title": "Sure, let’s smoosh SpaceX and Tesla together, who cares",
+      "url": "https://www.theverge.com/ai-artificial-intelligence/1016879/spacex-tesla-cursed-katamari",
+      "source": "The Verge",
+      "published": "2026-10-22T19:45:00.000Z"
+    },
+    {
+      "title": "1Password launches a way for AI agents to log in on your behalf without seeing your password",
+      "url": "https://techcrunch.com/2026/10/22/1password-launches-a-way-for-ai-agents-to-log-in-on-your-behalf-without-seeing-your-password/",
       "source": "TechCrunch",
-      "published": "2026-10-21T21:16:20.000Z"
+      "published": "2026-10-22T19:07:09.000Z"
     },
     {
-      "title": "The new human-crafted Apple Music brand matters in an AI world",
-      "url": "https://arstechnica.com/culture/2026/10/the-new-human-crafted-apple-music-brand-matters-in-an-ai-world/",
-      "source": "Ars Technica",
-      "published": "2026-10-21T19:44:40.000Z"
+      "title": "Canva releases its first image generation model",
+      "url": "https://techcrunch.com/2026/10/22/canva-releases-its-first-image-generation-model/",
+      "source": "TechCrunch",
+      "published": "2026-10-22T19:00:00.000Z"
     },
     {
-      "title": "OpenAI's latest AI models are coming to Google Cloud and Antigravity",
-      "url": "https://arstechnica.com/ai/2026/10/openais-latest-ai-models-are-coming-to-google-cloud-and-antigravity/",
+      "title": "The Foundations of Scalable AI",
+      "url": "https://www.technologyreview.com/2026/10/22/1146103/the-foundations-of-scalable-ai/",
+      "source": "MIT Technology Review",
+      "published": "2026-10-22T18:48:04.000Z"
+    },
+    {
+      "title": "OlmoEarth v1.3: State-of-the-art embeddings for the whole planet",
+      "url": "https://huggingface.co/blog/allenai/olmoearth-v1-3",
+      "source": "Hugging Face",
+      "published": "2026-10-22T16:11:31.000Z"
+    },
+    {
+      "title": "Hackers got a four-day head start on epic PHP2Shell vulnerability",
+      "url": "https://arstechnica.com/security/2026/10/hackers-got-a-four-day-head-start-on-epic-php2shell-vulnerability/",
       "source": "Ars Technica",
-      "published": "2026-10-21T18:51:42.000Z"
+      "published": "2026-10-22T15:25:02.000Z"
     }
   ]
 }
