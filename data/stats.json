@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-02T20:10:36.131Z",
+  "updated_at": "2026-11-02T23:42:52.310Z",
   "projects": [
     {
       "name": "Libriso",
@@ -35,10 +35,17 @@
       "since_sdcv": 0,
       "last_commit": "2026-09-04T23:17:38-04:00",
       "stale_since": null
+    },
+    {
+      "name": "Gemayob",
+      "loc": 41753,
+      "since_sdcv": 49347,
+      "last_commit": "2026-10-23T16:51:12-04:00",
+      "stale_since": null
     }
   ],
   "totals": {
-    "loc": 72778,
-    "since_sdcv": 2186
+    "loc": 114531,
+    "since_sdcv": 51533
   }
 }
