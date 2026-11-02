@@ -36,6 +36,7 @@ jobs:
           KEY_THECLIMB: ${{ secrets.KEY_THECLIMB }}
           KEY_POCRD: ${{ secrets.KEY_POCRD }}
           KEY_VELA: ${{ secrets.KEY_VELA }}
+          KEY_GEMAYOB: ${{ secrets.KEY_GEMAYOB }}
         run: bash scripts/clone.sh "$RUNNER_TEMP/repos"
       - name: Count lines
         run: node scripts/count.mjs --repos "$RUNNER_TEMP/repos"

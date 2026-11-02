@@ -7,7 +7,9 @@
     { "name": "ReportGen", "repo": "haejung017/ReportGen", "baseline": "9edc44b384bbecbe57e47b16fd34cb724f1ed938", "exclude": ["www/userguide_v1.0.html", "www/quarto-skinny-extracted.css"] },
     { "name": "TheClimb",  "repo": "haejung017/TheClimb",  "baseline": "de2997c786a821325544b79215f1cbe5668ba8c6", "exclude": [] },
     { "name": "POCRD",     "repo": "haejung017/POCRD",     "baseline": "89d452cf3a0e158388d5de6d75e56c016cb6257d", "exclude": [] },
-    { "name": "Vela",      "repo": "haejung017/Vela",      "baseline": null, "exclude": [] }
+    { "name": "Vela",      "repo": "haejung017/Vela",      "baseline": null, "exclude": [] },
+    { "name": "Gemayob",   "repo": "haejung017/gemayob",   "baseline": null, "branch": "iterations",
+      "exclude": ["games/vera-maker.js", "games/gillian-body.js", "games/nova-recipe.js", "games/girl-recipe.js", "games/peach-fuzz.js", "games/skin-pores.js", "games/skin-base.js", "games/fuzz-spots.js", "js/logo.js"] }
   ],
   "news": {
     "limit": 20,
