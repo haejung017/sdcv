@@ -1,125 +1,101 @@
 {
-  "updated_at": "2026-11-03T17:40:23.400Z",
+  "updated_at": "2026-11-04T17:54:26.794Z",
   "items": [
     {
-      "title": "Agentic cheminformatics with Google Antigravity",
-      "url": "https://deepmind.google/blog/agentic-cheminformatics-with-google-antigravity/",
-      "source": "Google DeepMind",
-      "published": "2026-11-03T17:01:49.000Z"
-    },
-    {
-      "title": "Heimstaden is changing residential real estate management with AI",
-      "url": "https://openai.com/index/heimstaden",
+      "title": "OpenAI to acquire Pierre Computer Company, Inc.",
+      "url": "https://openai.com/index/openai-to-acquire-pierre",
       "source": "OpenAI",
-      "published": "2026-11-03T08:00:00.000Z"
+      "published": "2026-11-04T14:30:00.000Z"
     },
     {
-      "title": "Preparing our next security sprint to harden OpenAI",
-      "url": "https://openai.com/index/preparing-our-next-security-sprint-to-harden-openai",
+      "title": "Daybreak Red is now available in AWS GovCloud (US-East)",
+      "url": "https://openai.com/index/daybreak-red-aws-govcloud",
       "source": "OpenAI",
-      "published": "2026-11-02T18:00:00.000Z"
+      "published": "2026-11-04T07:00:00.000Z"
     },
     {
-      "title": "Rewarding defenders with bigger bug bounties",
-      "url": "https://openai.com/index/rewarding-defenders-with-bigger-bug-bounties",
-      "source": "OpenAI",
-      "published": "2026-11-02T18:00:00.000Z"
-    },
-    {
-      "title": "StateBench: Testing how language models track state changes over long documents",
-      "url": "https://huggingface.co/blog/allenai/statebench",
+      "title": "Dharma Field Extractor: Any Document In, Structured Fields in JSON Out",
+      "url": "https://huggingface.co/blog/Dharma-AI/dharma-field-extractor",
       "source": "Hugging Face",
-      "published": "2026-11-03T17:15:21.000Z"
+      "published": "2026-11-04T17:50:10.000Z"
     },
     {
-      "title": "Anthropic is still grappling with the economics of compute",
-      "url": "https://techcrunch.com/2026/11/03/anthropic-is-still-grappling-with-the-economics-of-compute/",
+      "title": "I tried Apple’s Siri Recaps. They’re surprisingly useful — and a little unsettling",
+      "url": "https://techcrunch.com/2026/11/04/i-tried-apples-siri-recaps-theyre-surprisingly-useful-and-a-little-unsettling/",
       "source": "TechCrunch",
-      "published": "2026-11-03T17:07:01.000Z"
+      "published": "2026-11-04T16:51:35.000Z"
     },
     {
-      "title": "Palette: teaching a small model to build decks in your design language",
-      "url": "https://huggingface.co/blog/ibm-research/palette-deck-building",
-      "source": "Hugging Face",
-      "published": "2026-11-03T16:35:36.000Z"
-    },
-    {
-      "title": "Google will let schools disable its AI tools, but not without sacrificing Search",
-      "url": "https://techcrunch.com/2026/11/03/google-will-let-schools-disable-its-ai-tools-but-not-without-sacrificing-search/",
+      "title": "Google faces backlash for plan that would turn off Search for schools that restrict AI",
+      "url": "https://techcrunch.com/2026/11/04/google-faces-backlash-for-plan-that-would-turn-off-search-for-schools-that-restrict-ai/",
       "source": "TechCrunch",
-      "published": "2026-11-03T16:30:34.000Z"
+      "published": "2026-11-04T16:17:22.000Z"
     },
     {
-      "title": "Qwen 3.8 27B on my laptop can interpret model weights, too",
-      "url": "https://simonwillison.net/2026/Nov/3/qwen-can-interpret-model-weights/",
-      "source": "Simon Willison",
-      "published": "2026-11-03T16:29:48.000Z"
-    },
-    {
-      "title": "Midterm elections 2026: all the news",
-      "url": "https://www.theverge.com/policy/1020640/midterm-elections-2026-all-the-news",
+      "title": "Data centers lost the midterms",
+      "url": "https://www.theverge.com/policy/1026365/data-centers-midterms-results",
       "source": "The Verge",
-      "published": "2026-11-03T15:58:39.000Z"
+      "published": "2026-11-04T16:05:39.000Z"
     },
     {
-      "title": "Apple restricts dating apps and AI companions to users 18 and up",
-      "url": "https://techcrunch.com/2026/11/03/apple-restricts-dating-apps-and-ai-companions-to-users-18-and-up/",
-      "source": "TechCrunch",
-      "published": "2026-11-03T15:38:27.000Z"
-    },
-    {
-      "title": "Apple is all in on AI — its own and everyone else’s",
-      "url": "https://www.theverge.com/ai-artificial-intelligence/1025245/apple-earnings-q4-ai",
+      "title": "Uber only fulfilled 4 rides from AI agents last quarter",
+      "url": "https://www.theverge.com/transportation/1026306/uber-ai-agents-q3-earnings-disintermediation",
       "source": "The Verge",
-      "published": "2026-11-03T15:24:51.000Z"
+      "published": "2026-11-04T15:58:45.000Z"
     },
     {
-      "title": "OpenAI is quietly renaming data centers ‘compute campuses’",
-      "url": "https://www.theverge.com/ai-artificial-intelligence/1025242/openai-quietly-renames-data-centers-as-compute-campuses",
+      "title": "Sam Altman addresses RAM comments: People should ‘put as much as they want in their computers’",
+      "url": "https://www.theverge.com/ai-artificial-intelligence/1026292/sam-altman-ram-shortage-pcs-comments",
       "source": "The Verge",
-      "published": "2026-11-03T15:00:44.000Z"
+      "published": "2026-11-04T14:46:01.000Z"
     },
     {
-      "title": "The TechCrunch Founder Summit agenda is only half the reason to be in Boston on Nov. 4",
-      "url": "https://techcrunch.com/2026/11/03/the-techcrunch-founder-summit-agenda-is-only-half-the-reason-to-be-in-boston-on-nov-4/",
+      "title": "TechCrunch Founder Summit 2026: Doors open at 9 a.m. ET in Boston",
+      "url": "https://techcrunch.com/2026/11/04/techcrunch-founder-summit-2026-todays-the-day/",
       "source": "TechCrunch",
-      "published": "2026-11-03T14:30:00.000Z"
+      "published": "2026-11-04T13:00:00.000Z"
     },
     {
-      "title": "Tomorrow: TechCrunch Founder Summit takes over Boston and when pass rates increase",
-      "url": "https://techcrunch.com/2026/11/03/tomorrow-techcrunch-founder-summit-takes-over-boston-and-when-pass-rates-increase/",
-      "source": "TechCrunch",
-      "published": "2026-11-03T14:00:00.000Z"
-    },
-    {
-      "title": "How “reverse game theory” could keep AI agents in check",
-      "url": "https://www.technologyreview.com/2026/11/03/1147934/reverse-game-theory-mechanism-design-ai-alignment/",
+      "title": "Securing the agentic enterprise with data lineage",
+      "url": "https://www.technologyreview.com/2026/11/04/1147596/securing-the-agentic-enterprise-with-data-lineage/",
       "source": "MIT Technology Review",
-      "published": "2026-11-03T10:43:41.000Z"
+      "published": "2026-11-04T13:00:00.000Z"
     },
     {
-      "title": "Here’s who is falling in line for Trump’s “Super Intelligence” loyalty test",
-      "url": "https://www.technologyreview.com/2026/11/02/1147932/heres-who-is-falling-in-line-for-trumps-super-intelligence-loyalty-test/",
-      "source": "MIT Technology Review",
-      "published": "2026-11-03T04:18:47.000Z"
-    },
-    {
-      "title": "CWE-bench v2: More coverage, quality, and transparency",
-      "url": "https://huggingface.co/blog/cwe-bench",
-      "source": "Hugging Face",
-      "published": "2026-11-03T00:00:00.000Z"
-    },
-    {
-      "title": "Transformers Model Integration Contracts",
-      "url": "https://huggingface.co/blog/transformers-mic",
-      "source": "Hugging Face",
-      "published": "2026-11-03T00:00:00.000Z"
-    },
-    {
-      "title": "Anthropic clamps down on Claude’s AI video game clones",
-      "url": "https://www.theverge.com/ai-artificial-intelligence/1024632/anthropic-claude-ai-video-game-clones",
+      "title": "Google hasn’t figured out how to make AI pay like its search engine",
+      "url": "https://www.theverge.com/ai-artificial-intelligence/1024862/google-search-ai-overviews-alphabet-earnings-q3",
       "source": "The Verge",
-      "published": "2026-11-02T18:56:02.000Z"
+      "published": "2026-11-04T12:00:00.000Z"
+    },
+    {
+      "title": "The biggest modding site in PC gaming is taking a stance on AI",
+      "url": "https://www.theverge.com/games/1026085/nexus-mods-ai-disclosures",
+      "source": "The Verge",
+      "published": "2026-11-04T00:42:10.000Z"
+    },
+    {
+      "title": "Anthropic is working on a system to prove AI models’ identity",
+      "url": "https://techcrunch.com/2026/11/03/anthropic-is-working-on-a-system-to-prove-ai-models-identity/",
+      "source": "TechCrunch",
+      "published": "2026-11-03T22:41:03.000Z"
+    },
+    {
+      "title": "Data centers are turning to old jet engines as the wait for power grows",
+      "url": "https://techcrunch.com/2026/11/03/data-centers-are-turning-to-old-jet-engines-as-the-wait-for-power-grows/",
+      "source": "TechCrunch",
+      "published": "2026-11-03T22:19:53.000Z"
+    },
+    {
+      "title": "Ukraine’s drone strikes spur hasty Russian plans for underground data centers",
+      "url": "https://arstechnica.com/ai/2026/11/russia-looks-to-hide-data-centers-underground-as-ukrainian-drones-strike-back/",
+      "source": "Ars Technica",
+      "published": "2026-11-03T20:39:55.000Z"
+    },
+    {
+      "title": "Google will let schools skip AI tools, but they have to give up search, too",
+      "url": "https://arstechnica.com/ai/2026/11/google-will-let-schools-skip-ai-tools-but-they-have-to-give-up-search-too/",
+      "source": "Ars Technica",
+      "published": "2026-11-03T17:54:43.000Z"
     }
   ]
 }
