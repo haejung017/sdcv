@@ -1,35 +1,17 @@
 {
-  "updated_at": "2026-11-10T17:38:07.105Z",
+  "updated_at": "2026-11-11T17:49:30.464Z",
   "items": [
     {
-      "title": "Gemini 4 Carbon is now available",
-      "url": "https://deepmind.google/blog/gemini-4-carbon-is-now-available/",
+      "title": "AlphaGenome 2: Deciphering how cells read DNA to better understand disease",
+      "url": "https://deepmind.google/blog/alphagenome-2-deciphering-how-cells-read-dna-to-better-understand-disease/",
       "source": "Google DeepMind",
-      "published": "2026-11-10T16:03:47.000Z"
+      "published": "2026-11-11T15:00:15.000Z"
     },
     {
-      "title": "Introducing AlphaProof Code: a breakthrough in verifying complex software at depth",
-      "url": "https://deepmind.google/blog/introducing-alphaproof-code/",
-      "source": "Google DeepMind",
-      "published": "2026-11-10T12:02:28.000Z"
-    },
-    {
-      "title": "Helping caregivers use AI in everyday life",
-      "url": "https://openai.com/index/helping-caregivers-use-ai-in-everyday-life",
+      "title": "ChatGPT Plus for veterans and servicemembers",
+      "url": "https://openai.com/index/chatgpt-plus-for-veterans",
       "source": "OpenAI",
-      "published": "2026-11-10T12:00:00.000Z"
-    },
-    {
-      "title": "Closing the AI guidance gap in education",
-      "url": "https://openai.com/index/closing-ai-guidance-gap-education",
-      "source": "OpenAI",
-      "published": "2026-11-10T09:00:00.000Z"
-    },
-    {
-      "title": "Work at the Frontier: AI’s effect on freelance work",
-      "url": "https://openai.com/index/ai-effect-on-freelance-work",
-      "source": "OpenAI",
-      "published": "2026-11-10T07:00:00.000Z"
+      "published": "2026-11-11T08:00:00.000Z"
     },
     {
       "title": "Anthropic launches roadshow for proposed initial public offering",
@@ -38,88 +20,106 @@
       "published": "2026-11-10T00:00:00.000Z"
     },
     {
-      "title": "Gemini Robotics 2.5 accelerates real-world general dexterity",
-      "url": "https://deepmind.google/blog/gemini-robotics-2-5-accelerates-real-world-physical-intelligence/",
-      "source": "Google DeepMind",
-      "published": "2026-11-09T19:51:47.000Z"
-    },
-    {
-      "title": "ChatGPT Enterprise now available in AWS Marketplace",
-      "url": "https://openai.com/index/chatgpt-enterprise-aws-marketplace",
-      "source": "OpenAI",
-      "published": "2026-11-09T19:00:00.000Z"
-    },
-    {
-      "title": "Introducing Claude Fable 5.2 and Claude Mythos 5.2",
-      "url": "https://www.anthropic.com/claude-fable-and-mythos-5-2",
-      "source": "Anthropic",
-      "published": "2026-11-09T00:00:00.000Z"
-    },
-    {
-      "title": "The indie game community is in disarray over AI and Big Walk",
-      "url": "https://www.theverge.com/games/1030994/big-walk-independent-games-festival-igf-ai",
-      "source": "The Verge",
-      "published": "2026-11-10T17:32:47.000Z"
-    },
-    {
-      "title": "Anthropic has its own AI-powered office suite now",
-      "url": "https://www.theverge.com/ai-artificial-intelligence/1030709/anthropic-has-its-own-ai-powered-office-suite-now",
-      "source": "The Verge",
-      "published": "2026-11-10T17:30:00.000Z"
-    },
-    {
-      "title": "Anthropic launches Claude Meetings to turn workplace discussions into plans and tasks",
-      "url": "https://techcrunch.com/2026/11/10/anthropic-launches-claude-meetings-to-turn-workplace-discussions-into-plans-and-tasks/",
-      "source": "TechCrunch",
-      "published": "2026-11-10T17:30:00.000Z"
-    },
-    {
-      "title": "Nvidia CEO Jensen Huang’s affair with alleged Chinese spy: a timeline",
-      "url": "https://techcrunch.com/2026/11/10/nvidia-ceo-jensen-huangs-affair-with-alleged-chinese-spy-a-timeline/",
-      "source": "TechCrunch",
-      "published": "2026-11-10T17:04:19.000Z"
-    },
-    {
-      "title": "eBay appears to have shut the door on third-party AI agents",
-      "url": "https://www.theverge.com/tech/1030838/ebay-ai-agents-meta-muse-agentic-shopping",
-      "source": "The Verge",
-      "published": "2026-11-10T16:20:30.000Z"
-    },
-    {
-      "title": "Google releases Gemini 4 Carbon with agent ‘swarm’ feature",
-      "url": "https://www.theverge.com/ai-artificial-intelligence/1030787/google-gemini-4-carbon-public-rollout",
-      "source": "The Verge",
-      "published": "2026-11-10T16:00:00.000Z"
-    },
-    {
-      "title": "Google broadens its AI hardware portfolio with two new specialized chips",
-      "url": "https://techcrunch.com/2026/11/10/google-broadens-its-ai-hardware-portfolio-with-two-new-specialized-chips/",
-      "source": "TechCrunch",
-      "published": "2026-11-10T15:54:08.000Z"
-    },
-    {
-      "title": "Meta’s AI agent Muse lands on Apple Watch and Android Wear OS",
-      "url": "https://techcrunch.com/2026/11/10/metas-ai-agent-muse-lands-on-apple-watch-and-wear-os/",
-      "source": "TechCrunch",
-      "published": "2026-11-10T15:29:30.000Z"
-    },
-    {
-      "title": "DeepMind reveals Gemini Robotics 2.5 and open safety benchmark \"ASIMOV-jailbreak\"",
-      "url": "https://arstechnica.com/google/2026/11/deepmind-reveals-gemini-robotics-2-5-and-open-safety-benchmark-asimov-jailbreak/",
+      "title": "Big Walk used AI to fix a bug. Now the indie gaming world is having a reckoning.",
+      "url": "https://arstechnica.com/gaming/2026/11/big-walk-used-ai-to-fix-a-bug-now-the-indie-gaming-world-is-having-a-reckoning/",
       "source": "Ars Technica",
-      "published": "2026-11-10T15:00:39.000Z"
+      "published": "2026-11-11T17:37:32.000Z"
     },
     {
-      "title": "Anthropic targets $1.4 trillion IPO",
-      "url": "https://www.theverge.com/ai-artificial-intelligence/1030703/anthropic-ipo-1-4-trillion",
-      "source": "The Verge",
-      "published": "2026-11-10T14:06:54.000Z"
-    },
-    {
-      "title": "Adobe brings AI agents and new creative tools to Photoshop, Premiere, and Firefly",
-      "url": "https://techcrunch.com/2026/11/10/adobe-adds-more-ai-to-its-products-and-launches-an-mcp/",
+      "title": "Is Jensen Huang’s bad behavior more commonplace than it seems?",
+      "url": "https://techcrunch.com/2026/11/11/is-jensen-huangs-bad-behavior-more-commonplace-than-it-seems/",
       "source": "TechCrunch",
-      "published": "2026-11-10T14:05:10.000Z"
+      "published": "2026-11-11T16:16:07.000Z"
+    },
+    {
+      "title": "OpenAI’s quarterly revenue reportedly crosses $10B for the first time",
+      "url": "https://techcrunch.com/2026/11/11/openais-quarterly-revenue-reportedly-crosses-10b-for-the-first-time/",
+      "source": "TechCrunch",
+      "published": "2026-11-11T16:14:44.000Z"
+    },
+    {
+      "title": "Google’s Tabletop AI experiment lets you build custom collaboration apps",
+      "url": "https://www.theverge.com/tech/1031526/google-tabletop-ai-experiment-waitlist-availability",
+      "source": "The Verge",
+      "published": "2026-11-11T16:00:00.000Z"
+    },
+    {
+      "title": "Google’s AlphaGenome 2 zooms in on the cellular roots of disease",
+      "url": "https://www.theverge.com/ai-artificial-intelligence/1031524/google-deepmind-alphagenome-2-genetic-ai-model",
+      "source": "The Verge",
+      "published": "2026-11-11T15:00:00.000Z"
+    },
+    {
+      "title": "Databricks’ new AI agent tells CEO Ali Ghodsi the unvarnished truth",
+      "url": "https://techcrunch.com/2026/11/11/databricks-new-ai-agent-tells-ceo-ali-ghodsi-the-unvarnished-truth/",
+      "source": "TechCrunch",
+      "published": "2026-11-11T15:00:00.000Z"
+    },
+    {
+      "title": "Google DeepMind just mathematically verified key parts of Signal",
+      "url": "https://arstechnica.com/ai/2026/11/signals-encryption-just-passed-an-ai-powered-mathematical-checkup/",
+      "source": "Ars Technica",
+      "published": "2026-11-11T14:08:57.000Z"
+    },
+    {
+      "title": "Adobe’s AI experiments let you walk around in photos and interview your characters",
+      "url": "https://www.theverge.com/tech/1031505/adobe-max-2026-sneaks-experiments-ai",
+      "source": "The Verge",
+      "published": "2026-11-11T14:00:00.000Z"
+    },
+    {
+      "title": "Plurai wants to help AI agents work better using the same approach that helped get self-driving cars to roads",
+      "url": "https://techcrunch.com/2026/11/11/plurai-wants-to-help-ai-agents-work-better-using-the-same-approach-that-helped-get-self-driving-cars-to-roads/",
+      "source": "TechCrunch",
+      "published": "2026-11-11T14:00:00.000Z"
+    },
+    {
+      "title": "Nvidia’s crisis has corporate governance experts reaching for the popcorn",
+      "url": "https://techcrunch.com/2026/11/10/nvidias-crisis-has-corporate-governance-experts-reaching-for-the-popcorn/",
+      "source": "TechCrunch",
+      "published": "2026-11-11T07:30:51.000Z"
+    },
+    {
+      "title": "BotPsy: On-Device Personal Assistant with a Sub-Billion-Parameter Agentic Language Model",
+      "url": "https://huggingface.co/blog/qvac/botpsy",
+      "source": "Hugging Face",
+      "published": "2026-11-11T05:01:16.000Z"
+    },
+    {
+      "title": "Token Pooling-Aware Training for Multi-Vector Embedding Models",
+      "url": "https://huggingface.co/blog/token-pooling",
+      "source": "Hugging Face",
+      "published": "2026-11-11T00:00:00.000Z"
+    },
+    {
+      "title": "Ring cameras go mobile as Amazon debuts AI-powered security drone and robot",
+      "url": "https://arstechnica.com/ai/2026/11/ring-cameras-go-mobile-as-amazon-debuts-ai-powered-security-drone-and-robot/",
+      "source": "Ars Technica",
+      "published": "2026-11-10T22:35:01.000Z"
+    },
+    {
+      "title": "Grok Build coding agent leaks oodles of confidential info, some belonging to SpaceXSI",
+      "url": "https://arstechnica.com/security/2026/11/grok-build-coding-agent-leaks-oodles-of-confidential-info-some-belonging-to-spacexsi/",
+      "source": "Ars Technica",
+      "published": "2026-11-10T21:12:59.000Z"
+    },
+    {
+      "title": "What happens to mathematics when AI becomes an oracle?",
+      "url": "https://arstechnica.com/science/2026/11/what-happens-to-mathematics-when-ai-becames-an-oracle/",
+      "source": "Ars Technica",
+      "published": "2026-11-10T20:30:01.000Z"
+    },
+    {
+      "title": "The US is winning the AI race. Jensen Huang could have blown it",
+      "url": "https://www.theverge.com/ai-artificial-intelligence/1031063/jensen-huang-ai-race-us-china-spy",
+      "source": "The Verge",
+      "published": "2026-11-10T19:04:05.000Z"
+    },
+    {
+      "title": "ChatGPT is getting verified AI ‘Business Agents’",
+      "url": "https://www.theverge.com/ai-artificial-intelligence/1030552/openai-chatgpt-business-agents-hub",
+      "source": "The Verge",
+      "published": "2026-11-10T18:00:00.000Z"
     }
   ]
 }
