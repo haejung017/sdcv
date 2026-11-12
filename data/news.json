@@ -1,125 +1,107 @@
 {
-  "updated_at": "2026-11-11T17:49:30.464Z",
+  "updated_at": "2026-11-12T18:04:41.110Z",
   "items": [
     {
-      "title": "AlphaGenome 2: Deciphering how cells read DNA to better understand disease",
-      "url": "https://deepmind.google/blog/alphagenome-2-deciphering-how-cells-read-dna-to-better-understand-disease/",
+      "title": "Introducing Gemini 4 Hydrogen",
+      "url": "https://deepmind.google/blog/introducing-gemini-4-hydrogen/",
       "source": "Google DeepMind",
-      "published": "2026-11-11T15:00:15.000Z"
+      "published": "2026-11-12T18:00:50.000Z"
     },
     {
-      "title": "ChatGPT Plus for veterans and servicemembers",
-      "url": "https://openai.com/index/chatgpt-plus-for-veterans",
+      "title": "Holiday Extras is rethinking what it can build with Codex",
+      "url": "https://openai.com/business/customer-stories/holidays-extras-codex",
       "source": "OpenAI",
-      "published": "2026-11-11T08:00:00.000Z"
+      "published": "2026-11-12T09:30:00.000Z"
     },
     {
-      "title": "Anthropic launches roadshow for proposed initial public offering",
-      "url": "https://www.anthropic.com/news/roadshow-launch",
-      "source": "Anthropic",
-      "published": "2026-11-10T00:00:00.000Z"
+      "title": "Supporting research on AI and children’s safety",
+      "url": "https://openai.com/index/children-first-declaration",
+      "source": "OpenAI",
+      "published": "2026-11-12T00:00:00.000Z"
     },
     {
-      "title": "Big Walk used AI to fix a bug. Now the indie gaming world is having a reckoning.",
-      "url": "https://arstechnica.com/gaming/2026/11/big-walk-used-ai-to-fix-a-bug-now-the-indie-gaming-world-is-having-a-reckoning/",
+      "title": "Gilbert + Tobin rethinks the business of law with AI",
+      "url": "https://openai.com/index/gilbert-tobin-sam-nickless",
+      "source": "OpenAI",
+      "published": "2026-11-12T00:00:00.000Z"
+    },
+    {
+      "title": "Hugging Face CEO vows to keep fighting for open-source AI after Jensen Huang’s exit",
+      "url": "https://techcrunch.com/2026/11/12/hugging-face-ceo-vows-to-keep-fighting-for-open-source-ai-after-jensen-huangs-exit/",
+      "source": "TechCrunch",
+      "published": "2026-11-12T17:36:40.000Z"
+    },
+    {
+      "title": "SoftBank’s billion-dollar loss may have put a cap on AI’s natural gas ambitions",
+      "url": "https://techcrunch.com/2026/11/12/softbanks-billion-dollar-loss-may-have-put-a-cap-on-ais-natural-gas-ambitions/",
+      "source": "TechCrunch",
+      "published": "2026-11-12T17:00:52.000Z"
+    },
+    {
+      "title": "Phota Labs uses AI to turn everyday photos into professional-looking shots",
+      "url": "https://techcrunch.com/2026/11/12/phota-labs-uses-ai-to-turn-everyday-photos-into-professional-looking-shots/",
+      "source": "TechCrunch",
+      "published": "2026-11-12T17:00:00.000Z"
+    },
+    {
+      "title": "Jensen Huang agrees to testify before Congress",
+      "url": "https://techcrunch.com/2026/11/12/jensen-huang-agrees-to-testify-before-congress/",
+      "source": "TechCrunch",
+      "published": "2026-11-12T16:36:37.000Z"
+    },
+    {
+      "title": "Five ways Jensen Huang’s ouster from Nvidia could damage the AI industry",
+      "url": "https://techcrunch.com/2026/11/12/five-ways-jensen-huangs-ouster-from-nvidia-could-damage-the-ai-industry/",
+      "source": "TechCrunch",
+      "published": "2026-11-12T16:32:33.000Z"
+    },
+    {
+      "title": "Read Nvidia’s internal emails about the ‘extraordinarily difficult period’ ahead",
+      "url": "https://www.theverge.com/ai-artificial-intelligence/1032028/read-nvidias-internal-emails-jensen-huang",
+      "source": "The Verge",
+      "published": "2026-11-12T15:48:12.000Z"
+    },
+    {
+      "title": "Nvidia CEO Jensen Huang has resigned. What happens next?",
+      "url": "https://www.theverge.com/ai-artificial-intelligence/1030422/nvidia-jensen-huang-ai-china-alice-huang",
+      "source": "The Verge",
+      "published": "2026-11-12T15:01:31.000Z"
+    },
+    {
+      "title": "Google pushes privacy angle as Gemini-powered smartglasses debut starting at $395",
+      "url": "https://arstechnica.com/google/2026/11/google-pushes-privacy-angle-as-gemini-powered-smartglasses-debut-starting-at-395/",
       "source": "Ars Technica",
-      "published": "2026-11-11T17:37:32.000Z"
+      "published": "2026-11-12T14:50:17.000Z"
     },
     {
-      "title": "Is Jensen Huang’s bad behavior more commonplace than it seems?",
-      "url": "https://techcrunch.com/2026/11/11/is-jensen-huangs-bad-behavior-more-commonplace-than-it-seems/",
-      "source": "TechCrunch",
-      "published": "2026-11-11T16:16:07.000Z"
-    },
-    {
-      "title": "OpenAI’s quarterly revenue reportedly crosses $10B for the first time",
-      "url": "https://techcrunch.com/2026/11/11/openais-quarterly-revenue-reportedly-crosses-10b-for-the-first-time/",
-      "source": "TechCrunch",
-      "published": "2026-11-11T16:14:44.000Z"
-    },
-    {
-      "title": "Google’s Tabletop AI experiment lets you build custom collaboration apps",
-      "url": "https://www.theverge.com/tech/1031526/google-tabletop-ai-experiment-waitlist-availability",
+      "title": "I reviewed the Apple HomeView, ask me anything",
+      "url": "https://www.theverge.com/tech/1031868/i-reviewed-the-apple-homeview-ask-me-anything",
       "source": "The Verge",
-      "published": "2026-11-11T16:00:00.000Z"
+      "published": "2026-11-12T14:10:00.000Z"
     },
     {
-      "title": "Google’s AlphaGenome 2 zooms in on the cellular roots of disease",
-      "url": "https://www.theverge.com/ai-artificial-intelligence/1031524/google-deepmind-alphagenome-2-genetic-ai-model",
+      "title": "Nvidia CEO Jensen Huang resigns amid spy, affair scandals",
+      "url": "https://www.theverge.com/ai-artificial-intelligence/1031689/jensen-huang-nvidia-ceo-resigns",
       "source": "The Verge",
-      "published": "2026-11-11T15:00:00.000Z"
+      "published": "2026-11-12T13:53:16.000Z"
     },
     {
-      "title": "Databricks’ new AI agent tells CEO Ali Ghodsi the unvarnished truth",
-      "url": "https://techcrunch.com/2026/11/11/databricks-new-ai-agent-tells-ceo-ali-ghodsi-the-unvarnished-truth/",
-      "source": "TechCrunch",
-      "published": "2026-11-11T15:00:00.000Z"
-    },
-    {
-      "title": "Google DeepMind just mathematically verified key parts of Signal",
-      "url": "https://arstechnica.com/ai/2026/11/signals-encryption-just-passed-an-ai-powered-mathematical-checkup/",
-      "source": "Ars Technica",
-      "published": "2026-11-11T14:08:57.000Z"
-    },
-    {
-      "title": "Adobe’s AI experiments let you walk around in photos and interview your characters",
-      "url": "https://www.theverge.com/tech/1031505/adobe-max-2026-sneaks-experiments-ai",
-      "source": "The Verge",
-      "published": "2026-11-11T14:00:00.000Z"
-    },
-    {
-      "title": "Plurai wants to help AI agents work better using the same approach that helped get self-driving cars to roads",
-      "url": "https://techcrunch.com/2026/11/11/plurai-wants-to-help-ai-agents-work-better-using-the-same-approach-that-helped-get-self-driving-cars-to-roads/",
-      "source": "TechCrunch",
-      "published": "2026-11-11T14:00:00.000Z"
-    },
-    {
-      "title": "Nvidia’s crisis has corporate governance experts reaching for the popcorn",
-      "url": "https://techcrunch.com/2026/11/10/nvidias-crisis-has-corporate-governance-experts-reaching-for-the-popcorn/",
-      "source": "TechCrunch",
-      "published": "2026-11-11T07:30:51.000Z"
-    },
-    {
-      "title": "BotPsy: On-Device Personal Assistant with a Sub-Billion-Parameter Agentic Language Model",
-      "url": "https://huggingface.co/blog/qvac/botpsy",
+      "title": "The Definitive Fine-Tuning Guide for 3D Generation Models",
+      "url": "https://huggingface.co/blog/3d-lora-finetuning",
       "source": "Hugging Face",
-      "published": "2026-11-11T05:01:16.000Z"
+      "published": "2026-11-12T00:00:00.000Z"
     },
     {
-      "title": "Token Pooling-Aware Training for Multi-Vector Embedding Models",
-      "url": "https://huggingface.co/blog/token-pooling",
-      "source": "Hugging Face",
-      "published": "2026-11-11T00:00:00.000Z"
-    },
-    {
-      "title": "Ring cameras go mobile as Amazon debuts AI-powered security drone and robot",
-      "url": "https://arstechnica.com/ai/2026/11/ring-cameras-go-mobile-as-amazon-debuts-ai-powered-security-drone-and-robot/",
-      "source": "Ars Technica",
-      "published": "2026-11-10T22:35:01.000Z"
-    },
-    {
-      "title": "Grok Build coding agent leaks oodles of confidential info, some belonging to SpaceXSI",
-      "url": "https://arstechnica.com/security/2026/11/grok-build-coding-agent-leaks-oodles-of-confidential-info-some-belonging-to-spacexsi/",
-      "source": "Ars Technica",
-      "published": "2026-11-10T21:12:59.000Z"
-    },
-    {
-      "title": "What happens to mathematics when AI becomes an oracle?",
-      "url": "https://arstechnica.com/science/2026/11/what-happens-to-mathematics-when-ai-becames-an-oracle/",
-      "source": "Ars Technica",
-      "published": "2026-11-10T20:30:01.000Z"
-    },
-    {
-      "title": "The US is winning the AI race. Jensen Huang could have blown it",
-      "url": "https://www.theverge.com/ai-artificial-intelligence/1031063/jensen-huang-ai-race-us-china-spy",
+      "title": "Nvidia is reportedly preparing to fire Jensen Huang",
+      "url": "https://www.theverge.com/tech/1031652/jensen-huang-rumor",
       "source": "The Verge",
-      "published": "2026-11-10T19:04:05.000Z"
+      "published": "2026-11-11T22:44:36.000Z"
     },
     {
-      "title": "ChatGPT is getting verified AI ‘Business Agents’",
-      "url": "https://www.theverge.com/ai-artificial-intelligence/1030552/openai-chatgpt-business-agents-hub",
-      "source": "The Verge",
-      "published": "2026-11-10T18:00:00.000Z"
+      "title": "Taiwan’s chipmaking giant TSMC to invest $1B in Anthropic, OpenAI",
+      "url": "https://arstechnica.com/ai/2026/11/taiwans-chipmaking-giant-tsmc-to-invest-1b-in-anthropic-openai/",
+      "source": "Ars Technica",
+      "published": "2026-11-11T18:16:40.000Z"
     }
   ]
 }
