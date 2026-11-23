@@ -1,29 +1,125 @@
 {
-  "updated_at": "2026-11-22T17:43:17.552Z",
+  "updated_at": "2026-11-23T21:58:23.075Z",
   "items": [
     {
-      "title": "The vibe-coding revolution is coming to all the gadgets",
-      "url": "https://www.theverge.com/column/1039139/vibe-coding-gadgets-tv-camera",
-      "source": "The Verge",
-      "published": "2026-11-22T13:00:00.000Z"
+      "title": "Finding faster quantum algorithms with agents and formal verification",
+      "url": "https://deepmind.google/blog/finding-faster-quantum-algorithms-with-agents-and-formal-verification/",
+      "source": "Google DeepMind",
+      "published": "2026-11-23T16:59:40.000Z"
     },
     {
-      "title": "Signal restricts mobile screenshots as it confronts ‘existential threat’ of AI surveillance",
-      "url": "https://techcrunch.com/2026/11/21/signal-restricts-mobile-screenshots-as-it-confronts-existential-threat-of-ai-surveillance/",
+      "title": "Connected intelligence for in-house legal",
+      "url": "https://openai.com/business/learn/connected-intelligence-for-in-house-legal",
+      "source": "OpenAI",
+      "published": "2026-11-23T08:00:00.000Z"
+    },
+    {
+      "title": "Richpanel helps companies automate 50% of support in 30 days",
+      "url": "https://openai.com/business/customer-stories/richpanel-ai-customer-support",
+      "source": "OpenAI",
+      "published": "2026-11-23T08:00:00.000Z"
+    },
+    {
+      "title": "Elon Musk and others rejoice as Jensen Huang is reinstated at Nvidia amid scandal",
+      "url": "https://techcrunch.com/2026/11/23/elon-musk-and-others-rejoice-as-jensen-huang-is-reinstated-at-nvidia-amid-scandal/",
       "source": "TechCrunch",
-      "published": "2026-11-21T21:37:10.000Z"
+      "published": "2026-11-23T21:47:41.000Z"
     },
     {
-      "title": "A tale of two Nvidias",
-      "url": "https://techcrunch.com/2026/11/21/a-tale-of-two-nvidias/",
+      "title": "Ladybird's first alpha release",
+      "url": "https://simonwillison.net/2026/Nov/23/ladybird/",
+      "source": "Simon Willison",
+      "published": "2026-11-23T21:46:35.000Z"
+    },
+    {
+      "title": "States sue SpaceX to stop Grok from generating child sex images, revenge porn",
+      "url": "https://arstechnica.com/tech-policy/2026/11/states-sue-spacex-to-stop-grok-from-generating-child-sex-images-revenge-porn/",
+      "source": "Ars Technica",
+      "published": "2026-11-23T21:30:44.000Z"
+    },
+    {
+      "title": "Megaspeed, the company at the center of the Jensen Huang scandal, appears headed for a U.S. blacklist",
+      "url": "https://techcrunch.com/2026/11/23/megaspeed-the-company-at-the-center-of-the-jensen-huang-scandal-appears-headed-for-a-u-s-blacklist/",
       "source": "TechCrunch",
-      "published": "2026-11-21T21:07:42.000Z"
+      "published": "2026-11-23T21:25:42.000Z"
     },
     {
-      "title": "The UN fails to agree on rules regulating ‘killer robots’",
-      "url": "https://www.theverge.com/tech/1039554/un-regulations-killer-robots",
+      "title": "AI data centers throw another wrench into chaotic UN climate talks",
+      "url": "https://www.theverge.com/science/1040497/ai-data-centers-electricity-un-climate-summit",
       "source": "The Verge",
-      "published": "2026-11-21T20:03:37.000Z"
+      "published": "2026-11-23T21:09:37.000Z"
+    },
+    {
+      "title": "Nvidia employees greet Jensen Huang like a hero as he returns to company’s HQ",
+      "url": "https://techcrunch.com/2026/11/23/nvidia-employees-greet-jensen-huang-like-a-hero-as-he-returns-to-companys-hq/",
+      "source": "TechCrunch",
+      "published": "2026-11-23T20:38:53.000Z"
+    },
+    {
+      "title": "Claude AI can review pull requests and ship fixes on its own now",
+      "url": "https://www.theverge.com/ai-artificial-intelligence/1040134/anthropic-claude-ship-ai-pull-requests",
+      "source": "The Verge",
+      "published": "2026-11-23T20:00:00.000Z"
+    },
+    {
+      "title": "How Jensen Huang ended up as Nvidia CEO again",
+      "url": "https://www.theverge.com/tech/1040428/nvidia-jensen-huang-ceo-return",
+      "source": "The Verge",
+      "published": "2026-11-23T19:57:18.000Z"
+    },
+    {
+      "title": "Google Search’s AI Mode can now tap into Drive and Wallet for more personalized responses",
+      "url": "https://techcrunch.com/2026/11/23/google-searchs-ai-mode-can-now-tap-into-drive-and-wallet-for-more-personalized-responses/",
+      "source": "TechCrunch",
+      "published": "2026-11-23T19:14:46.000Z"
+    },
+    {
+      "title": "Nothing’s upcoming Ear Note is a pair of earbuds with AI transcription",
+      "url": "https://www.theverge.com/gadgets/1040357/nothing-ear-note-earbuds-ai-recording",
+      "source": "The Verge",
+      "published": "2026-11-23T19:04:52.000Z"
+    },
+    {
+      "title": "Oregon and Virginia sue SpaceX over Grok’s porn deepfakes",
+      "url": "https://www.theverge.com/ai-artificial-intelligence/1040255/x-grok-ai-deepfakes-oregon-virginia-lawsuit",
+      "source": "The Verge",
+      "published": "2026-11-23T18:26:47.000Z"
+    },
+    {
+      "title": "Jensen Huang scheduled to testify next week in Senate following reinstatement as Nvidia CEO",
+      "url": "https://techcrunch.com/2026/11/23/jensen-huang-scheduled-to-testify-next-week-in-senate-following-reinstatement-as-nvidia-ceo/",
+      "source": "TechCrunch",
+      "published": "2026-11-23T18:12:22.000Z"
+    },
+    {
+      "title": "A legendary philosopher isn’t buying Anthropic’s consciousness argument",
+      "url": "https://www.technologyreview.com/2026/11/23/1149569/a-legendary-philosopher-isnt-buying-anthropics-consciousness-argument/",
+      "source": "MIT Technology Review",
+      "published": "2026-11-23T17:36:08.000Z"
+    },
+    {
+      "title": "RoboTrack: Point tracking for real-world robotic manipulation",
+      "url": "https://huggingface.co/blog/allenai/robotrack",
+      "source": "Hugging Face",
+      "published": "2026-11-23T17:20:37.000Z"
+    },
+    {
+      "title": "Jensen Huang reinstated as Nvidia CEO, board chair",
+      "url": "https://arstechnica.com/ai/2026/11/jensen-huang-reinstated-as-nvidia-ceo-board-chair/",
+      "source": "Ars Technica",
+      "published": "2026-11-23T15:46:18.000Z"
+    },
+    {
+      "title": "Review: The Asus ProArt P16 offers a glimpse of a future powered by local AI",
+      "url": "https://arstechnica.com/reviews/2026/11/review-the-asus-proart-p16-offers-a-glimpse-of-a-future-powered-by-local-ai/",
+      "source": "Ars Technica",
+      "published": "2026-11-23T12:00:00.000Z"
+    },
+    {
+      "title": "How to build and maintain an agentic evaluation",
+      "url": "https://huggingface.co/blog/agentic-evals",
+      "source": "Hugging Face",
+      "published": "2026-11-23T00:00:00.000Z"
     }
   ]
 }
