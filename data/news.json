@@ -1,65 +1,23 @@
 {
-  "updated_at": "2026-11-26T19:28:52.837Z",
+  "updated_at": "2026-11-27T19:25:08.803Z",
   "items": [
     {
-      "title": "Grand Theft Auto VI proves why efficiency isn’t a virtue",
-      "url": "https://techcrunch.com/2026/11/26/as-anthropic-ipos-grand-theft-auto-vi-proves-why-efficiency-isnt-a-virtue/",
-      "source": "TechCrunch",
-      "published": "2026-11-26T16:00:00.000Z"
-    },
-    {
-      "title": "Introducing the llama.cpp benchmark dashboard for AMD Ryzen and Radeon",
-      "url": "https://huggingface.co/blog/ggml-org/llamacpp-amd-bench",
-      "source": "Hugging Face",
-      "published": "2026-11-26T11:37:17.000Z"
-    },
-    {
-      "title": "42 state AGs are trying to stop Character.AI from selling users’ chats",
-      "url": "https://www.theverge.com/policy/1042620/character-ai-sale-state-ags-block-selling-users-chats",
+      "title": "Android’s DIY widgets are a bit of vibe-coding fun",
+      "url": "https://www.theverge.com/tech/1041801/android-intelligence-create-my-widget-gemini",
       "source": "The Verge",
-      "published": "2026-11-26T09:54:40.000Z"
+      "published": "2026-11-27T14:00:00.000Z"
     },
     {
-      "title": "Building on Nemotron 3.5 Parse: Open Data, Fine-Tuning, and Faster Inference",
-      "url": "https://huggingface.co/blog/nvidia/building-on-nemotron-35-parse-open-data-fine-tunin",
+      "title": "Taking Trainium3 to the Track: Generating Videos with LTX-2.5",
+      "url": "https://huggingface.co/blog/video-trainium3",
       "source": "Hugging Face",
-      "published": "2026-11-26T05:05:36.000Z"
+      "published": "2026-11-27T00:00:00.000Z"
     },
     {
-      "title": "Swarms, Flocks, Gangs: How to build, train, and evaluate multi-agent systems",
-      "url": "https://huggingface.co/blog/training-swarms",
-      "source": "Hugging Face",
-      "published": "2026-11-26T00:00:00.000Z"
-    },
-    {
-      "title": "S&P considers Nvidia credit downgrade over governance and ‘key man’ risks",
-      "url": "https://techcrunch.com/2026/11/25/sp-considers-nvidia-credit-downgrade-over-governance-and-key-man-risks/",
+      "title": "Nvidia hits pause on chip shipments to Southeast Asia",
+      "url": "https://techcrunch.com/2026/11/26/nvidia-hits-pause-on-chip-shipments-to-southeast-asia/",
       "source": "TechCrunch",
-      "published": "2026-11-25T22:44:32.000Z"
-    },
-    {
-      "title": "Google’s patent for custom AI video feeds paints a bleak picture of entertainment’s future",
-      "url": "https://www.theverge.com/entertainment/1042221/google-my-channel-ai-video-patent",
-      "source": "The Verge",
-      "published": "2026-11-25T21:51:26.000Z"
-    },
-    {
-      "title": "OpenAI says heavy ChatGPT users may hit limits sooner as it merges Chat and Work",
-      "url": "https://techcrunch.com/2026/11/25/openai-says-heavy-chatgpt-users-may-hit-limits-sooner-as-it-merges-chat-and-work/",
-      "source": "TechCrunch",
-      "published": "2026-11-25T20:03:27.000Z"
-    },
-    {
-      "title": "Jensen Huang broke Nvidia’s code of conduct, and his employees may not forget it",
-      "url": "https://techcrunch.com/2026/11/25/jensen-huang-broke-nvidias-code-of-conduct-and-his-employees-may-not-forget-it/",
-      "source": "TechCrunch",
-      "published": "2026-11-25T19:54:57.000Z"
-    },
-    {
-      "title": "Anthropic’s Dario Amodei calls accusations of surrendering human control to AI ‘absurd’",
-      "url": "https://techcrunch.com/2026/11/25/anthropics-dario-amodei-calls-accusations-of-surrendering-human-control-to-ai-absurd/",
-      "source": "TechCrunch",
-      "published": "2026-11-25T19:44:24.000Z"
+      "published": "2026-11-26T20:03:54.000Z"
     }
   ]
 }
